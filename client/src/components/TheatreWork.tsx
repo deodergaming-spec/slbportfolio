@@ -3,40 +3,40 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function TheatreWork() {
   const productions = [
     {
-      title: "The Last Garden",
-      description: "A haunting exploration of memory and loss, this original production combined multimedia elements with intimate storytelling.",
-      venue: "Riverside Theatre",
+      title: "Lorem Ipsum Dolor",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      venue: "Consectetur Adipiscing",
       year: "2023",
-      image: "https://images.unsplash.com/photo-1516307365426-bea591f05011?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      image: null,
       featured: true
     },
     {
-      title: "Echoes of Tomorrow",
-      description: "A sci-fi drama exploring themes of technology and human connection.",
-      venue: "Metropolitan Theatre",
+      title: "Sed Do Eiusmod",
+      description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      venue: "Tempor Incididunt",
       year: "2022",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400"
+      image: null
     },
     {
-      title: "Winter's Tale Reimagined",
-      description: "A modern adaptation of Shakespeare's classic with contemporary relevance.",
-      venue: "City Arts Center",
+      title: "Duis Aute Irure",
+      description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      venue: "Voluptate Velit",
       year: "2021",
-      image: "https://images.unsplash.com/photo-1490633874781-1c63cc424610?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400"
+      image: null
     },
     {
-      title: "Quiet Revolutions",
-      description: "An intimate exploration of family dynamics and social change.",
-      venue: "Studio Theatre",
+      title: "Nemo Enim Ipsam",
+      description: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+      venue: "Adipisci Velit",
       year: "2023",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400"
+      image: null
     },
     {
-      title: "Songs of the City",
-      description: "Original musical celebrating urban life and community.",
-      venue: "Grand Theatre",
+      title: "Ut Enim Ad Minim",
+      description: "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+      venue: "Magna Aliqua",
       year: "2020",
-      image: "https://images.unsplash.com/photo-1503095396549-807759245b35?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400"
+      image: null
     }
   ];
 
@@ -47,9 +47,9 @@ export default function TheatreWork() {
     <section id="theatre" className="py-20 bg-light-gray">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-playfair font-bold text-forest mb-4">Theatre Work</h2>
+          <h2 className="text-4xl font-playfair font-bold text-forest mb-4">Lorem Ipsum Dolor</h2>
           <p className="text-xl text-charcoal max-w-2xl mx-auto">
-            A collection of directing projects, original productions, and collaborative works that showcase innovative storytelling and artistic vision.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
         
@@ -58,15 +58,13 @@ export default function TheatreWork() {
           <div className="mb-16 bg-white rounded-2xl shadow-lg overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-2">
               <div className="relative h-64 lg:h-auto">
-                <img 
-                  src={featuredProduction.image}
-                  alt={featuredProduction.title}
-                  className="w-full h-full object-cover" 
-                />
+                <div className="w-full h-full bg-gray-200 flex items-center justify-center">
+                  <span className="text-gray-500 text-lg font-medium">Image Here</span>
+                </div>
               </div>
               <div className="p-8 lg:p-12">
                 <span className="inline-block bg-burnt-orange text-cream px-3 py-1 rounded-full text-sm font-semibold mb-4">
-                  Featured Production
+                  Lorem Ipsum
                 </span>
                 <h3 className="text-2xl font-playfair font-bold text-forest mb-4">
                   {featuredProduction.title}
