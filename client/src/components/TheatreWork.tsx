@@ -73,9 +73,9 @@ export default function TheatreWork() {
                   {featuredProduction.description}
                 </p>
                 <div className="space-y-2 text-sm text-charcoal">
-                  <div><strong>Venue:</strong> {featuredProduction.venue}</div>
-                  <div><strong>Year:</strong> {featuredProduction.year}</div>
-                  <div><strong>Role:</strong> Director & Co-Writer</div>
+                  <div><strong>Lorem:</strong> {featuredProduction.venue}</div>
+                  <div><strong>Ipsum:</strong> {featuredProduction.year}</div>
+                  <div><strong>Dolor:</strong> Sit Amet Consectetur</div>
                 </div>
               </div>
             </div>
@@ -86,11 +86,9 @@ export default function TheatreWork() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {otherProductions.map((production, index) => (
             <Card key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <img 
-                src={production.image}
-                alt={production.title}
-                className="w-full h-48 object-cover" 
-              />
+              <div className="w-full h-48 bg-gray-200 flex items-center justify-center">
+                <span className="text-gray-500 text-lg font-medium">Image Here</span>
+              </div>
               <CardContent className="p-6">
                 <h4 className="text-xl font-playfair font-semibold text-forest mb-2">
                   {production.title}

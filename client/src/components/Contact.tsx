@@ -72,9 +72,9 @@ export default function Contact() {
     <section id="contact" className="py-20 bg-forest">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-playfair font-bold text-cream mb-4">Let's Work Together</h2>
+          <h2 className="text-4xl font-playfair font-bold text-cream mb-4">Lorem Ipsum Dolor</h2>
           <p className="text-xl text-cream max-w-2xl mx-auto">
-            Whether you're interested in commissioning a play, discussing a directing project, or exploring publishing opportunities, I'd love to hear from you.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
         
