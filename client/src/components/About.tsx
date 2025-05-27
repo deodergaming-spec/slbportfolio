@@ -4,7 +4,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
-            <h2 className="text-4xl font-playfair font-bold text-forest mb-8">Lorem Ipsum Dolor</h2>
+            <h2 className="text-4xl font-playfair font-bold text-forest mb-8">About Sarah</h2>
             <div className="prose prose-lg text-charcoal space-y-6">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -20,15 +20,15 @@ export default function About() {
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-6">
               <div className="text-center">
                 <div className="text-3xl font-playfair font-bold text-burnt-orange">25+</div>
-                <div className="text-sm text-charcoal">Lorem Ipsum</div>
+                <div className="text-sm text-charcoal">Productions Directed</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-playfair font-bold text-burnt-orange">12</div>
-                <div className="text-sm text-charcoal">Dolor Sit</div>
+                <div className="text-sm text-charcoal">Original Plays</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-playfair font-bold text-burnt-orange">3</div>
-                <div className="text-sm text-charcoal">Amet Consectetur</div>
+                <div className="text-sm text-charcoal">Published Books</div>
               </div>
             </div>
           </div>

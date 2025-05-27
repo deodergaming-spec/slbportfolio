@@ -3,38 +3,38 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function TheatreWork() {
   const productions = [
     {
-      title: "Lorem Ipsum Dolor",
+      title: "Play Name",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      venue: "Consectetur Adipiscing",
+      venue: "Theatre Venue Name",
       year: "2023",
       image: null,
       featured: true
     },
     {
-      title: "Sed Do Eiusmod",
-      description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      venue: "Tempor Incididunt",
+      title: "Play Name",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      venue: "Theatre Venue Name",
       year: "2022",
       image: null
     },
     {
-      title: "Duis Aute Irure",
-      description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      venue: "Voluptate Velit",
+      title: "Play Name",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      venue: "Theatre Venue Name",
       year: "2021",
       image: null
     },
     {
-      title: "Nemo Enim Ipsam",
-      description: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
-      venue: "Adipisci Velit",
+      title: "Play Name",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      venue: "Theatre Venue Name",
       year: "2023",
       image: null
     },
     {
-      title: "Ut Enim Ad Minim",
-      description: "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
-      venue: "Magna Aliqua",
+      title: "Play Name",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      venue: "Theatre Venue Name",
       year: "2020",
       image: null
     }
@@ -47,7 +47,7 @@ export default function TheatreWork() {
     <section id="theatre" className="py-20 bg-light-gray">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-playfair font-bold text-forest mb-4">Lorem Ipsum Dolor</h2>
+          <h2 className="text-4xl font-playfair font-bold text-forest mb-4">Theatre Work</h2>
           <p className="text-xl text-charcoal max-w-2xl mx-auto">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
@@ -64,7 +64,7 @@ export default function TheatreWork() {
               </div>
               <div className="p-8 lg:p-12">
                 <span className="inline-block bg-burnt-orange text-cream px-3 py-1 rounded-full text-sm font-semibold mb-4">
-                  Lorem Ipsum
+                  Featured Production
                 </span>
                 <h3 className="text-2xl font-playfair font-bold text-forest mb-4">
                   {featuredProduction.title}

@@ -25,10 +25,10 @@ export default function Hero() {
       
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="text-4xl md:text-6xl font-playfair font-bold text-cream mb-6">
-          Sarah Mitchell
+          Sarah Bond
         </h1>
         <p className="text-xl md:text-2xl text-cream mb-4 font-light">
-          Lorem Ipsum • Dolor Sit • Amet
+          Theatre Director • Playwright • Author
         </p>
         <p className="text-lg text-cream mb-8 max-w-2xl mx-auto leading-relaxed">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -38,14 +38,14 @@ export default function Hero() {
             onClick={() => scrollToSection('theatre')}
             className="bg-burnt-orange text-cream px-8 py-3 rounded-lg font-semibold hover:bg-burnt-orange/90 transition-all duration-200 transform hover:scale-105"
           >
-            Lorem Ipsum
+            View Theatre Work
           </Button>
           <Button 
             onClick={() => scrollToSection('writing')}
             variant="outline"
             className="border-2 border-cream text-cream px-8 py-3 rounded-lg font-semibold hover:bg-cream hover:text-forest transition-all duration-200"
           >
-            Dolor Sit
+            Explore Writing
           </Button>
         </div>
       </div>
