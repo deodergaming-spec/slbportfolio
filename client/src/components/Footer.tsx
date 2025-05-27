@@ -18,44 +18,44 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-playfair font-semibold text-cream mb-4">Sarah Mitchell</h3>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Theatre Director, Playwright & Author crafting compelling narratives that bridge the worlds of stage and page.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold text-cream mb-4">Quick Links</h4>
+            <h4 className="text-lg font-semibold text-cream mb-4">Lorem Links</h4>
             <div className="space-y-2">
               <button 
                 onClick={() => scrollToSection('about')}
                 className="block text-gray-300 hover:text-burnt-orange transition-colors duration-200 text-sm text-left"
               >
-                About
+                Lorem
               </button>
               <button 
                 onClick={() => scrollToSection('theatre')}
                 className="block text-gray-300 hover:text-burnt-orange transition-colors duration-200 text-sm text-left"
               >
-                Theatre Work
+                Ipsum Dolor
               </button>
               <button 
                 onClick={() => scrollToSection('writing')}
                 className="block text-gray-300 hover:text-burnt-orange transition-colors duration-200 text-sm text-left"
               >
-                Writing Portfolio
+                Sit Amet
               </button>
               <button 
                 onClick={() => scrollToSection('contact')}
                 className="block text-gray-300 hover:text-burnt-orange transition-colors duration-200 text-sm text-left"
               >
-                Contact
+                Consectetur
               </button>
             </div>
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold text-cream mb-4">Latest Updates</h4>
+            <h4 className="text-lg font-semibold text-cream mb-4">Lorem Updates</h4>
             <p className="text-gray-300 text-sm">
-              Currently developing "Digital Natives" - a contemporary drama exploring technology's impact on human connection.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
         </div>

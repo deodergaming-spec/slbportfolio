@@ -82,7 +82,7 @@ export default function Contact() {
           {/* Contact Form */}
           <Card className="bg-white rounded-2xl p-8 shadow-xl">
             <CardContent className="p-0">
-              <h3 className="text-2xl font-playfair font-semibold text-forest mb-6">Send a Message</h3>
+              <h3 className="text-2xl font-playfair font-semibold text-forest mb-6">Lorem Ipsum Message</h3>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
@@ -133,11 +133,11 @@ export default function Contact() {
                       <SelectValue placeholder="Select a topic" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="directing">Directing Project</SelectItem>
-                      <SelectItem value="playwriting">Playwriting Commission</SelectItem>
-                      <SelectItem value="publishing">Publishing Inquiry</SelectItem>
-                      <SelectItem value="collaboration">Collaboration</SelectItem>
-                      <SelectItem value="other">Other</SelectItem>
+                      <SelectItem value="directing">Lorem Ipsum</SelectItem>
+                      <SelectItem value="playwriting">Dolor Sit</SelectItem>
+                      <SelectItem value="publishing">Amet Consectetur</SelectItem>
+                      <SelectItem value="collaboration">Adipiscing Elit</SelectItem>
+                      <SelectItem value="other">Sed Do</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
@@ -151,7 +151,7 @@ export default function Contact() {
                     rows={5}
                     value={formData.message}
                     onChange={(e) => handleInputChange('message', e.target.value)}
-                    placeholder="Tell me about your project or inquiry..."
+                    placeholder="Lorem ipsum dolor sit amet..."
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-burnt-orange focus:border-transparent transition-all duration-200 resize-none"
                   />
                 </div>
@@ -171,12 +171,12 @@ export default function Contact() {
           <div className="space-y-8">
             <Card className="bg-white bg-opacity-10 rounded-2xl p-8">
               <CardContent className="p-0">
-                <h3 className="text-2xl font-playfair font-semibold text-cream mb-6">Get in Touch</h3>
+                <h3 className="text-2xl font-playfair font-semibold text-cream mb-6">Lorem Ipsum Dolor</h3>
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
                     <Mail className="text-burnt-orange text-xl mt-1" size={20} />
                     <div>
-                      <div className="text-cream font-medium">Email</div>
+                      <div className="text-cream font-medium">Lorem</div>
                       <div className="text-cream text-sm">sarah.mitchell@email.com</div>
                     </div>
                   </div>
@@ -184,7 +184,7 @@ export default function Contact() {
                   <div className="flex items-start space-x-4">
                     <Phone className="text-burnt-orange text-xl mt-1" size={20} />
                     <div>
-                      <div className="text-cream font-medium">Phone</div>
+                      <div className="text-cream font-medium">Ipsum</div>
                       <div className="text-cream text-sm">+1 (555) 123-4567</div>
                     </div>
                   </div>
@@ -192,8 +192,8 @@ export default function Contact() {
                   <div className="flex items-start space-x-4">
                     <MapPin className="text-burnt-orange text-xl mt-1" size={20} />
                     <div>
-                      <div className="text-cream font-medium">Location</div>
-                      <div className="text-cream text-sm">New York, NY</div>
+                      <div className="text-cream font-medium">Dolor</div>
+                      <div className="text-cream text-sm">Sit Amet, NY</div>
                     </div>
                   </div>
                 </div>
@@ -203,7 +203,7 @@ export default function Contact() {
             {/* Social Media & Professional Links */}
             <Card className="bg-white bg-opacity-10 rounded-2xl p-8">
               <CardContent className="p-0">
-                <h3 className="text-2xl font-playfair font-semibold text-cream mb-6">Connect Online</h3>
+                <h3 className="text-2xl font-playfair font-semibold text-cream mb-6">Lorem Ipsum Online</h3>
                 <div className="flex space-x-4">
                   <a href="#" className="w-12 h-12 bg-burnt-orange rounded-full flex items-center justify-center text-cream hover:bg-burnt-orange/80 transition-all duration-200">
                     <Linkedin size={20} />
@@ -221,12 +221,12 @@ export default function Contact() {
                 
                 <div className="mt-6 space-y-3">
                   <div className="text-cream text-sm">
-                    <strong>Professional Memberships:</strong>
+                    <strong>Lorem Ipsum Memberships:</strong>
                   </div>
                   <div className="text-cream text-sm space-y-1">
-                    <div>• Dramatists Guild of America</div>
-                    <div>• Society of Stage Directors & Choreographers</div>
-                    <div>• Authors Guild</div>
+                    <div>• Lorem Ipsum Dolor Sit</div>
+                    <div>• Consectetur Adipiscing Elit</div>
+                    <div>• Sed Do Eiusmod Tempor</div>
                   </div>
                 </div>
               </CardContent>
@@ -235,19 +235,19 @@ export default function Contact() {
             {/* Representation */}
             <Card className="bg-white bg-opacity-10 rounded-2xl p-8">
               <CardContent className="p-0">
-                <h3 className="text-2xl font-playfair font-semibold text-cream mb-6">Representation</h3>
+                <h3 className="text-2xl font-playfair font-semibold text-cream mb-6">Lorem Ipsum</h3>
                 <div className="space-y-4 text-cream text-sm">
                   <div>
-                    <strong>Literary Agent:</strong><br />
+                    <strong>Lorem Agent:</strong><br />
                     Jennifer Martinez<br />
-                    Creative Artists Agency<br />
-                    jennifer.martinez@caa.com
+                    Lorem Ipsum Agency<br />
+                    jennifer.martinez@lorem.com
                   </div>
                   <div>
-                    <strong>Theatre Agent:</strong><br />
+                    <strong>Dolor Agent:</strong><br />
                     Robert Chen<br />
-                    Paradigm Talent Agency<br />
-                    robert.chen@paradigm.com
+                    Sit Amet Agency<br />
+                    robert.chen@dolor.com
                   </div>
                 </div>
               </CardContent>
