@@ -73,9 +73,9 @@ export default function TheatreWork() {
                   {featuredProduction.description}
                 </p>
                 <div className="space-y-2 text-sm text-charcoal">
-                  <div><strong>Lorem:</strong> {featuredProduction.venue}</div>
-                  <div><strong>Ipsum:</strong> {featuredProduction.year}</div>
-                  <div><strong>Dolor:</strong> Sit Amet Consectetur</div>
+                  <div><strong>Venue:</strong> {featuredProduction.venue}</div>
+                  <div><strong>Year:</strong> {featuredProduction.year}</div>
+                  <div><strong>Role:</strong> Director & Co-Writer</div>
                 </div>
               </div>
             </div>

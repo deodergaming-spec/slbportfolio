@@ -3,49 +3,49 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function Writing() {
   const books = [
     {
-      title: "Lorem Ipsum Dolor",
-      type: "Consectetur Adipiscing",
+      title: "Book Title",
+      type: "Genre/Type",
       year: "2023",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       cover: null
     },
     {
-      title: "Sed Do Eiusmod",
-      type: "Tempor Incididunt",
+      title: "Book Title",
+      type: "Genre/Type",
       year: "2022",
-      description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       cover: null
     },
     {
-      title: "Duis Aute Irure",
-      type: "Dolor In Reprehenderit",
+      title: "Book Title",
+      type: "Genre/Type",
       year: "2021",
-      description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       cover: null
     }
   ];
 
   const plays = [
     {
-      title: "Nemo Enim Ipsam",
-      type: "Voluptatem Quia",
+      title: "Play Name",
+      type: "Play Type",
       year: "2023",
-      description: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
-      awards: "Lorem Ipsum Dolor Sit Amet"
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      awards: "Award Name"
     },
     {
-      title: "Ut Enim Ad Minim",
-      type: "Veniam Quis",
+      title: "Play Name",
+      type: "Play Type",
       year: "2022",
-      description: "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
-      productions: "Magna aliqua ut enim"
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      productions: "Production Info"
     },
     {
-      title: "Excepteur Sint",
-      type: "Occaecat Cupidatat",
+      title: "Play Name",
+      type: "Play Type",
       year: "2023",
-      description: "Sunt in culpa qui officia deserunt mollit anim id est laborum et dolorum fuga.",
-      status: "Lorem ipsum development"
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      status: "Development Status"
     }
   ];
 
@@ -53,7 +53,7 @@ export default function Writing() {
     <section id="writing" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-playfair font-bold text-forest mb-4">Lorem Ipsum Dolor</h2>
+          <h2 className="text-4xl font-playfair font-bold text-forest mb-4">Writing Portfolio</h2>
           <p className="text-xl text-charcoal max-w-2xl mx-auto">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
@@ -62,7 +62,7 @@ export default function Writing() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           {/* Published Books */}
           <div>
-            <h3 className="text-2xl font-playfair font-semibold text-forest mb-8">Lorem Ipsum Works</h3>
+            <h3 className="text-2xl font-playfair font-semibold text-forest mb-8">Published Works</h3>
             
             <div className="space-y-8">
               {books.map((book, index) => (
@@ -88,7 +88,7 @@ export default function Writing() {
           
           {/* Recent Plays */}
           <div>
-            <h3 className="text-2xl font-playfair font-semibold text-forest mb-8">Dolor Sit Amet</h3>
+            <h3 className="text-2xl font-playfair font-semibold text-forest mb-8">Recent Plays</h3>
             
             <div className="space-y-6">
               {plays.map((play, index) => (
@@ -105,13 +105,13 @@ export default function Writing() {
                     </p>
                     <div className="text-sm text-charcoal">
                       {play.awards && (
-                        <div><strong>Lorem:</strong> {play.awards}</div>
+                        <div><strong>Awards:</strong> {play.awards}</div>
                       )}
                       {play.productions && (
-                        <div><strong>Ipsum:</strong> {play.productions}</div>
+                        <div><strong>Productions:</strong> {play.productions}</div>
                       )}
                       {play.status && (
-                        <div><strong>Dolor:</strong> {play.status}</div>
+                        <div><strong>Status:</strong> {play.status}</div>
                       )}
                     </div>
                   </CardContent>
@@ -128,8 +128,8 @@ export default function Writing() {
           </div>
           <div className="absolute inset-0 bg-forest bg-opacity-60 flex items-center justify-center">
             <div className="text-center text-cream">
-              <h3 className="text-3xl font-playfair font-bold mb-4">Lorem Ipsum Dolor</h3>
-              <p className="text-lg max-w-2xl mx-auto px-4">Consectetur adipiscing elit sed do eiusmod tempor incididunt</p>
+              <h3 className="text-3xl font-playfair font-bold mb-4">The Writing Process</h3>
+              <p className="text-lg max-w-2xl mx-auto px-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
           </div>
         </div>
