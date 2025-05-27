@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 45 25% 97%; /* #F8F4E6 - cream */
+  --foreground: 210 11% 18%; /* #2D3436 - charcoal */
+  --muted: 210 11% 95%; /* #F1F3F4 - light gray */
+  --muted-foreground: 210 11% 45%; /* #718096 - muted gray */
+  --popover: 45 25% 97%; /* #F8F4E6 - cream */
+  --popover-foreground: 210 11% 18%; /* #2D3436 - charcoal */
+  --card: 0 0% 100%; /* white */
+  --card-foreground: 210 11% 18%; /* #2D3436 - charcoal */
+  --border: 210 11% 90%; /* light border */
+  --input: 210 11% 90%; /* input border */
+  --primary: 155 60% 22%; /* #1B4332 - forest green */
+  --primary-foreground: 45 25% 97%; /* #F8F4E6 - cream */
+  --secondary: 210 11% 95%; /* #F1F3F4 - light gray */
+  --secondary-foreground: 210 11% 18%; /* #2D3436 - charcoal */
+  --accent: 21 65% 55%; /* #CC6B49 - burnt orange */
+  --accent-foreground: 45 25% 97%; /* #F8F4E6 - cream */
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --ring: 155 60% 22%; /* #1B4332 - forest green */
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 155 60% 12%; /* darker forest */
+  --foreground: 45 25% 97%; /* cream */
+  --muted: 155 40% 18%; /* dark muted */
+  --muted-foreground: 45 15% 65%; /* light muted */
+  --popover: 155 60% 12%; /* darker forest */
+  --popover-foreground: 45 25% 97%; /* cream */
+  --card: 155 60% 15%; /* dark card */
+  --card-foreground: 45 25% 97%; /* cream */
+  --border: 155 40% 25%; /* dark border */
+  --input: 155 40% 25%; /* dark input */
+  --primary: 45 25% 97%; /* cream */
+  --primary-foreground: 155 60% 22%; /* forest green */
+  --secondary: 155 40% 18%; /* dark secondary */
+  --secondary-foreground: 45 25% 97%; /* cream */
+  --accent: 21 65% 55%; /* burnt orange */
+  --accent-foreground: 45 25% 97%; /* cream */
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 45 25% 97%; /* cream */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .text-forest {
+    color: hsl(155 60% 22%);
+  }
+  
+  .text-cream {
+    color: hsl(45 25% 97%);
+  }
+  
+  .text-burnt-orange {
+    color: hsl(21 65% 55%);
+  }
+  
+  .text-charcoal {
+    color: hsl(210 11% 18%);
+  }
+  
+  .bg-forest {
+    background-color: hsl(155 60% 22%);
+  }
+  
+  .bg-cream {
+    background-color: hsl(45 25% 97%);
+  }
+  
+  .bg-burnt-orange {
+    background-color: hsl(21 65% 55%);
+  }
+  
+  .bg-light-gray {
+    background-color: hsl(210 11% 95%);
+  }
+  
+  .border-forest {
+    border-color: hsl(155 60% 22%);
+  }
+  
+  .border-burnt-orange {
+    border-color: hsl(21 65% 55%);
+  }
+  
+  .hover\:bg-burnt-orange\/90:hover {
+    background-color: hsl(21 65% 55% / 0.9);
+  }
+  
+  .font-playfair {
+    font-family: 'Playfair Display', serif;
+  }
+}
