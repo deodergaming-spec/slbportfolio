@@ -16,44 +16,44 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-playfair font-semibold text-cream mb-4">Sarah Mitchell</h3>
+            <h3 className="text-xl font-playfair font-semibold text-cream mb-4">Sarah Bond</h3>
             <p className="text-gray-300 text-sm leading-relaxed">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold text-cream mb-4">Lorem Links</h4>
+            <h4 className="text-lg font-semibold text-cream mb-4">Quick Links</h4>
             <div className="space-y-2">
               <button 
                 onClick={() => scrollToSection('about')}
                 className="block text-gray-300 hover:text-burnt-orange transition-colors duration-200 text-sm text-left"
               >
-                Lorem
+                About
               </button>
               <button 
                 onClick={() => scrollToSection('theatre')}
                 className="block text-gray-300 hover:text-burnt-orange transition-colors duration-200 text-sm text-left"
               >
-                Ipsum Dolor
+                Theatre Work
               </button>
               <button 
                 onClick={() => scrollToSection('writing')}
                 className="block text-gray-300 hover:text-burnt-orange transition-colors duration-200 text-sm text-left"
               >
-                Sit Amet
+                Writing Portfolio
               </button>
               <button 
                 onClick={() => scrollToSection('contact')}
                 className="block text-gray-300 hover:text-burnt-orange transition-colors duration-200 text-sm text-left"
               >
-                Consectetur
+                Contact
               </button>
             </div>
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold text-cream mb-4">Lorem Updates</h4>
+            <h4 className="text-lg font-semibold text-cream mb-4">Stay Updated</h4>
             <p className="text-gray-300 text-sm">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
