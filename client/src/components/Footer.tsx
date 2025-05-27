@@ -62,7 +62,7 @@ export default function Footer() {
         
         <div className="border-t border-gray-600 mt-8 pt-8 text-center">
           <p className="text-gray-300 text-sm">
-            © 2024 Sarah Mitchell. All rights reserved. | Website designed for portfolio presentation.
+            © 2024 Sarah Bond. All rights reserved. | Website designed for portfolio presentation.
           </p>
         </div>
       </div>
