@@ -44,6 +44,12 @@ export default function Footer() {
                 Writing Portfolio
               </button>
               <button 
+                onClick={() => scrollToSection('gallery')}
+                className="block text-gray-300 hover:text-silver transition-colors duration-200 text-sm text-left"
+              >
+                Gallery
+              </button>
+              <button 
                 onClick={() => scrollToSection('contact')}
                 className="block text-gray-300 hover:text-silver transition-colors duration-200 text-sm text-left"
               >
