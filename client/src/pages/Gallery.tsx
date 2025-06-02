@@ -53,7 +53,7 @@ export default function Gallery() {
       {/* Page Header */}
       <div className="pt-24 pb-12 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-playfair font-bold text-white mb-6">
+          <h1 className="text-4xl md:text-6xl font-pixel font-bold text-white mb-6">
             Gallery
           </h1>
           <p className="text-xl text-white max-w-2xl mx-auto">
@@ -94,28 +94,30 @@ export default function Gallery() {
           {/* Gallery Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredItems.map((item, index) => (
-              <Card key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
-                {/* Image Container */}
-                <div className="relative h-64 bg-gray-200 flex items-center justify-center overflow-hidden">
-                  <span className="text-gray-500 text-lg font-medium">Image Here</span>
-                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
-                </div>
-                
-                {/* Content */}
-                <div className="p-6">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="inline-block bg-silver text-black px-3 py-1 rounded-full text-sm font-medium">
-                      {item.category}
-                    </span>
+              <Link key={index} href={`/gallery/${item.category.toLowerCase()}/${encodeURIComponent(item.title.toLowerCase().replace(/\s+/g, '-'))}`}>
+                <Card className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group cursor-pointer">
+                  {/* Image Container */}
+                  <div className="relative h-64 bg-gray-200 flex items-center justify-center overflow-hidden">
+                    <span className="text-gray-500 text-lg font-medium">Image Here</span>
+                    <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
                   </div>
-                  <h3 className="text-xl font-playfair font-semibold text-black mb-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-black text-sm leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-              </Card>
+                  
+                  {/* Content */}
+                  <div className="p-6">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="inline-block bg-silver text-black px-3 py-1 rounded-full text-sm font-medium">
+                        {item.category}
+                      </span>
+                    </div>
+                    <h3 className="text-xl font-playfair font-semibold text-black mb-2">
+                      {item.title}
+                    </h3>
+                    <p className="text-black text-sm leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+                </Card>
+              </Link>
             ))}
           </div>
 

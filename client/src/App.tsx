@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/Home";
 import Gallery from "@/pages/Gallery";
+import GalleryDetail from "@/pages/GalleryDetail";
 import NotFound from "@/pages/not-found";
 
 function Router() {

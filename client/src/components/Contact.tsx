@@ -203,6 +203,9 @@ export default function Contact() {
                   <a href="#" className="w-12 h-12 bg-silver rounded-full flex items-center justify-center text-black hover:bg-silver/80 transition-all duration-200">
                     <Instagram size={20} />
                   </a>
+                  <a href="#" className="w-12 h-12 bg-silver rounded-full flex items-center justify-center text-black hover:bg-silver/80 transition-all duration-200">
+                    <Youtube size={20} />
+                  </a>
                 </div>
               </CardContent>
             </Card>
