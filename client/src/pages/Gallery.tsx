@@ -92,7 +92,7 @@ export default function Gallery() {
           </div>
 
           {/* Gallery Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
             {filteredItems.map((item, index) => (
               <Link key={index} href={`/gallery/${item.category.toLowerCase()}/${encodeURIComponent(item.title.toLowerCase().replace(/\s+/g, '-'))}`}>
                 <Card className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group cursor-pointer">
