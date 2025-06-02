@@ -171,7 +171,7 @@ export default function Contact() {
           <div className="space-y-8">
             <Card className="bg-white bg-opacity-10 rounded-2xl p-8">
               <CardContent className="p-0">
-                <h3 className="text-2xl font-playfair font-semibold text-white mb-6">Get in Touch</h3>
+                <h3 className="text-2xl font-playfair font-semibold mb-6 text-[#000000]">Get in Touch</h3>
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
                     <Mail className="text-silver text-xl mt-1" size={20} />
