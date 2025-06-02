@@ -120,7 +120,7 @@ export default function Contact() {
                     type="email"
                     value={formData.email}
                     onChange={(e) => handleInputChange('email', e.target.value)}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-burnt-orange focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-all duration-200 bg-white text-black"
                   />
                 </div>
                 
@@ -129,7 +129,7 @@ export default function Contact() {
                     Subject
                   </label>
                   <Select value={formData.subject} onValueChange={(value) => handleInputChange('subject', value)}>
-                    <SelectTrigger className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-burnt-orange focus:border-transparent transition-all duration-200">
+                    <SelectTrigger className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-all duration-200 bg-white text-black">
                       <SelectValue placeholder="Select a topic" />
                     </SelectTrigger>
                     <SelectContent>
@@ -152,7 +152,7 @@ export default function Contact() {
                     value={formData.message}
                     onChange={(e) => handleInputChange('message', e.target.value)}
                     placeholder="Tell me about your project or inquiry..."
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-burnt-orange focus:border-transparent transition-all duration-200 resize-none"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-all duration-200 resize-none bg-white text-black placeholder:text-gray-500"
                   />
                 </div>
                 
