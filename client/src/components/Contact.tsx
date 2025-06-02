@@ -86,7 +86,7 @@ export default function Contact() {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label htmlFor="firstName" className="block text-sm font-medium text-charcoal mb-2">
+                    <label htmlFor="firstName" className="block text-sm font-medium text-black mb-2">
                       First Name *
                     </label>
                     <Input
@@ -98,7 +98,7 @@ export default function Contact() {
                     />
                   </div>
                   <div>
-                    <label htmlFor="lastName" className="block text-sm font-medium text-charcoal mb-2">
+                    <label htmlFor="lastName" className="block text-sm font-medium text-black mb-2">
                       Last Name *
                     </label>
                     <Input
@@ -112,7 +112,7 @@ export default function Contact() {
                 </div>
                 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-charcoal mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-black mb-2">
                     Email Address *
                   </label>
                   <Input
@@ -125,7 +125,7 @@ export default function Contact() {
                 </div>
                 
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-charcoal mb-2">
+                  <label htmlFor="subject" className="block text-sm font-medium text-black mb-2">
                     Subject
                   </label>
                   <Select value={formData.subject} onValueChange={(value) => handleInputChange('subject', value)}>
@@ -143,7 +143,7 @@ export default function Contact() {
                 </div>
                 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-charcoal mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium text-black mb-2">
                     Message *
                   </label>
                   <Textarea

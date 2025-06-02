@@ -1,0 +1,122 @@
+import { Card } from "@/components/ui/card";
+
+export default function Gallery() {
+  const galleryItems = [
+    {
+      title: "Seagulls and Sad Sad Stories - Production",
+      category: "Theatre",
+      description: "Behind the scenes from the award-winning production",
+      image: null
+    },
+    {
+      title: "School of Rock Rehearsals",
+      category: "Theatre", 
+      description: "Directing the regional amateur debut production",
+      image: null
+    },
+    {
+      title: "Writing Workshop",
+      category: "Writing",
+      description: "Leading creative writing sessions",
+      image: null
+    },
+    {
+      title: "Book Launch Event",
+      category: "Publishing",
+      description: "Seagulls and Sad Sad Stories book launch",
+      image: null
+    },
+    {
+      title: "Theatre Collaboration",
+      category: "Theatre",
+      description: "Working with young performers",
+      image: null
+    },
+    {
+      title: "Creative Process",
+      category: "Writing",
+      description: "Sarah's writing workspace and process",
+      image: null
+    }
+  ];
+
+  const categories = ["All", "Theatre", "Writing", "Publishing"];
+
+  return (
+    <section id="gallery" className="py-20 bg-light-silver">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-playfair font-bold text-black mb-4">Gallery</h2>
+          <p className="text-xl text-black max-w-2xl mx-auto">
+            A visual journey through Sarah's theatrical productions, writing process, and creative collaborations
+          </p>
+        </div>
+
+        {/* Category Filter */}
+        <div className="flex justify-center mb-12">
+          <div className="flex flex-wrap gap-2">
+            {categories.map((category) => (
+              <button
+                key={category}
+                className="px-6 py-2 bg-white text-black border border-gray-300 rounded-lg hover:bg-black hover:text-white transition-all duration-200"
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Gallery Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {galleryItems.map((item, index) => (
+            <Card key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
+              {/* Image Container */}
+              <div className="relative h-64 bg-gray-200 flex items-center justify-center overflow-hidden">
+                <span className="text-gray-500 text-lg font-medium">Image Here</span>
+                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+              </div>
+              
+              {/* Content */}
+              <div className="p-6">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="inline-block bg-silver text-black px-3 py-1 rounded-full text-sm font-medium">
+                    {item.category}
+                  </span>
+                </div>
+                <h3 className="text-xl font-playfair font-semibold text-black mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-black text-sm leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
+            </Card>
+          ))}
+        </div>
+
+        {/* Call to Action */}
+        <div className="text-center mt-16">
+          <p className="text-black mb-6">
+            Want to collaborate or learn more about Sarah's work?
+          </p>
+          <button 
+            onClick={() => {
+              const element = document.getElementById('contact');
+              if (element) {
+                const navHeight = 64;
+                const targetPosition = element.offsetTop - navHeight;
+                window.scrollTo({
+                  top: targetPosition,
+                  behavior: 'smooth'
+                });
+              }
+            }}
+            className="bg-black text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-all duration-200"
+          >
+            Get in Touch
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+}
