@@ -17,7 +17,7 @@ export default function TheatreWork() {
       venue: "Laurels, Whitley Bay",
       year: "2023",
       role: "Director",
-      image: null
+      image: "/you-need-to-say-sorry.jpg"
     },
     {
       title: "School of Rock: The Next Generation",
@@ -25,7 +25,7 @@ export default function TheatreWork() {
       venue: "Tyne Theatre and Opera House",
       year: "2023",
       role: "Director",
-      image: null
+      image: "/school-of-rock-cast.jpg"
     }
   ];
 
@@ -74,8 +74,18 @@ export default function TheatreWork() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {otherProductions.map((production, index) => (
             <Card key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <div className="w-full h-48 bg-gray-200 flex items-center justify-center">
-                <span className="text-gray-500 text-lg font-medium">Image Here</span>
+              <div className="w-full h-48 overflow-hidden">
+                {production.image ? (
+                  <img 
+                    src={production.image} 
+                    alt={`${production.title} production photo`}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <div className="w-full h-full bg-gray-200 flex items-center justify-center">
+                    <span className="text-gray-500 text-lg font-medium">Image Here</span>
+                  </div>
+                )}
               </div>
               <CardContent className="p-6">
                 <h4 className="text-xl font-playfair font-semibold text-black mb-2">
