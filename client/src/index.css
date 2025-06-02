@@ -110,4 +110,23 @@
   .font-playfair {
     font-family: 'Playfair Display', serif;
   }
+
+  /* Force proper text visibility in form inputs */
+  input[type="text"], 
+  input[type="email"], 
+  textarea {
+    color: #000000 !important;
+    background-color: #ffffff !important;
+  }
+
+  input[type="text"]::placeholder, 
+  input[type="email"]::placeholder, 
+  textarea::placeholder {
+    color: #666666 !important;
+  }
+
+  /* Hero background gradient */
+  .hero-gradient {
+    background: linear-gradient(135deg, #000000 0%, #2a2a2a 50%, #c0c0c0 100%);
+  }
 }

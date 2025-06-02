@@ -130,10 +130,8 @@ export default function Gallery() {
             <p className="text-black mb-6">
               Want to collaborate or learn more about Sarah's work?
             </p>
-            <Link href="/#contact">
-              <a className="bg-black text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-all duration-200">
-                Get in Touch
-              </a>
+            <Link href="/#contact" className="bg-black text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-all duration-200 inline-block">
+              Get in Touch
             </Link>
           </div>
         </div>
