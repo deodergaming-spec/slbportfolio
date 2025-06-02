@@ -83,10 +83,45 @@ export default function Writing() {
             </div>
           </div>
           
-          {/* Writing Workshops - placeholder for future content */}
+          {/* Creative Workshops */}
           <div className="mt-12">
-            <h3 className="text-2xl font-playfair font-semibold text-black mb-8">Writing Workshops</h3>
-            <p className="text-gray-600">Content coming soon...</p>
+            <h3 className="text-2xl font-playfair font-semibold text-black mb-8">Creative Workshops</h3>
+            
+            {/* Workshop Cover Image */}
+            <div className="mb-8 rounded-2xl overflow-hidden shadow-lg">
+              <img 
+                src="/creative-workshops-cover.png" 
+                alt="Creative Workshops 2025 Programme"
+                className="w-full h-auto"
+              />
+            </div>
+            
+            {/* Workshop Packages Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <div className="rounded-xl overflow-hidden shadow-lg">
+                <img 
+                  src="/workshop-packages-1.png" 
+                  alt="Workshop packages - Writing, Directing, and Get into Theatre"
+                  className="w-full h-auto"
+                />
+              </div>
+              <div className="rounded-xl overflow-hidden shadow-lg">
+                <img 
+                  src="/workshop-packages-2.png" 
+                  alt="Workshop packages - Voiceover, Seagulls, and 3 Week Workshop"
+                  className="w-full h-auto"
+                />
+              </div>
+            </div>
+            
+            {/* Bespoke Workshops */}
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <img 
+                src="/bespoke-workshops.png" 
+                alt="Bespoke workshops tailored to your curriculum"
+                className="w-full h-auto"
+              />
+            </div>
           </div>
         </div>
         
