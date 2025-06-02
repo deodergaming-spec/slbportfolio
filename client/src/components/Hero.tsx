@@ -54,13 +54,15 @@ export default function Hero() {
       </div>
       
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 className="text-4xl md:text-6xl font-pixel font-bold text-white mb-6" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
-          Sarah Bond
-        </h1>
-        <p className="text-xl md:text-2xl text-white mb-8 font-light" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
-          Writer and Director
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="bg-black bg-opacity-40 rounded-lg p-8 backdrop-blur-sm">
+          <h1 className="text-4xl md:text-6xl font-pixel font-bold text-white mb-6" style={{ textShadow: '3px 3px 6px rgba(0,0,0,1)' }}>
+            Sarah Bond
+          </h1>
+          <p className="text-xl md:text-2xl text-white mb-8 font-light" style={{ textShadow: '2px 2px 4px rgba(0,0,0,1)' }}>
+            Writer and Director
+          </p>
+        </div>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
           <Button 
             onClick={() => scrollToSection('theatre')}
             className="bg-silver text-black px-8 py-3 rounded-lg font-semibold hover:bg-silver/90 transition-all duration-200 transform hover:scale-105"
