@@ -50,14 +50,14 @@ export default function Hero() {
             }}
           />
         ))}
-        {/* <div className="absolute inset-0 bg-black bg-opacity-40"></div> */}
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       </div>
       
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 className="text-4xl md:text-6xl font-pixel font-bold text-white mb-6">
+        <h1 className="text-4xl md:text-6xl font-pixel font-bold text-white mb-6" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
           Sarah Bond
         </h1>
-        <p className="text-xl md:text-2xl text-white mb-8 font-light">
+        <p className="text-xl md:text-2xl text-white mb-8 font-light" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
           Writer and Director
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
