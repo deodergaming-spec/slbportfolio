@@ -13,6 +13,7 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/gallery" component={Gallery} />
+      <Route path="/gallery/:category/:item" component={GalleryDetail} />
       <Route component={NotFound} />
     </Switch>
   );

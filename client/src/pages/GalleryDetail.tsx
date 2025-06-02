@@ -5,8 +5,8 @@ import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 
 export default function GalleryDetail() {
-  const params = useParams();
-  const { category, item } = params;
+  const [match, params] = useRoute("/gallery/:category/:item");
+  const { category, item } = params || {};
 
   // Sample data - in a real app, this would come from a database
   const galleryItems = [

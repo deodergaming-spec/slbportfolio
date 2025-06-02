@@ -72,7 +72,7 @@ export default function Contact() {
     <section id="contact" className="py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-playfair font-bold text-white mb-4">Let's Work Together!</h2>
+          <h2 className="text-4xl font-pixel font-bold text-white mb-4">Let's Work Together!</h2>
           <p className="text-xl text-white max-w-2xl mx-auto">
             Sarah is always looking for new and exciting projects to work on. Get in touch to discuss your idea!
           </p>
