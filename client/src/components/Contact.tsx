@@ -94,7 +94,7 @@ export default function Contact() {
                       type="text"
                       value={formData.firstName}
                       onChange={(e) => handleInputChange('firstName', e.target.value)}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-burnt-orange focus:border-transparent transition-all duration-200"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-all duration-200 bg-white text-black"
                     />
                   </div>
                   <div>
@@ -106,7 +106,7 @@ export default function Contact() {
                       type="text"
                       value={formData.lastName}
                       onChange={(e) => handleInputChange('lastName', e.target.value)}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-burnt-orange focus:border-transparent transition-all duration-200"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-all duration-200 bg-white text-black"
                     />
                   </div>
                 </div>

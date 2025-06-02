@@ -1,9 +1,20 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [location] = useLocation();
+
+  const handleNavigation = (sectionId: string) => {
+    if (location === '/gallery') {
+      // If on gallery page, navigate to home first then scroll
+      window.location.href = `/#${sectionId}`;
+    } else {
+      // If on home page, just scroll to section
+      scrollToSection(sectionId);
+    }
+  };
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -30,25 +41,25 @@ export default function Navigation() {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               <button 
-                onClick={() => scrollToSection('home')}
+                onClick={() => handleNavigation('home')}
                 className="text-black hover:text-silver transition-colors duration-200 font-medium"
               >
                 Home
               </button>
               <button 
-                onClick={() => scrollToSection('about')}
+                onClick={() => handleNavigation('about')}
                 className="text-black hover:text-silver transition-colors duration-200 font-medium"
               >
                 About
               </button>
               <button 
-                onClick={() => scrollToSection('theatre')}
+                onClick={() => handleNavigation('theatre')}
                 className="text-black hover:text-silver transition-colors duration-200 font-medium"
               >
                 Theatre Work
               </button>
               <button 
-                onClick={() => scrollToSection('writing')}
+                onClick={() => handleNavigation('writing')}
                 className="text-black hover:text-silver transition-colors duration-200 font-medium"
               >
                 Writing
@@ -57,7 +68,7 @@ export default function Navigation() {
                 Gallery
               </Link>
               <button 
-                onClick={() => scrollToSection('contact')}
+                onClick={() => handleNavigation('contact')}
                 className="text-black hover:text-silver transition-colors duration-200 font-medium"
               >
                 Contact
@@ -82,25 +93,25 @@ export default function Navigation() {
         <div className="md:hidden bg-white border-t border-gray-200">
           <div className="px-2 pt-2 pb-3 space-y-1">
             <button 
-              onClick={() => scrollToSection('home')}
+              onClick={() => handleNavigation('home')}
               className="block w-full text-left px-3 py-2 text-black hover:text-silver transition-colors duration-200 font-medium"
             >
               Home
             </button>
             <button 
-              onClick={() => scrollToSection('about')}
+              onClick={() => handleNavigation('about')}
               className="block w-full text-left px-3 py-2 text-black hover:text-silver transition-colors duration-200 font-medium"
             >
               About
             </button>
             <button 
-              onClick={() => scrollToSection('theatre')}
+              onClick={() => handleNavigation('theatre')}
               className="block w-full text-left px-3 py-2 text-black hover:text-silver transition-colors duration-200 font-medium"
             >
               Theatre Work
             </button>
             <button 
-              onClick={() => scrollToSection('writing')}
+              onClick={() => handleNavigation('writing')}
               className="block w-full text-left px-3 py-2 text-black hover:text-silver transition-colors duration-200 font-medium"
             >
               Writing
@@ -109,7 +120,7 @@ export default function Navigation() {
               Gallery
             </Link>
             <button 
-              onClick={() => scrollToSection('contact')}
+              onClick={() => handleNavigation('contact')}
               className="block w-full text-left px-3 py-2 text-black hover:text-silver transition-colors duration-200 font-medium"
             >
               Contact
