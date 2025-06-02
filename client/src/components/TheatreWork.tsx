@@ -44,9 +44,11 @@ export default function TheatreWork() {
           <div className="mb-16 bg-white rounded-2xl shadow-lg overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-2">
               <div className="relative h-64 lg:h-auto">
-                <div className="w-full h-full bg-gray-200 flex items-center justify-center">
-                  <span className="text-gray-500 text-lg font-medium">Image Here</span>
-                </div>
+                <img 
+                  src="/seagulls-production.jpg" 
+                  alt="Seagulls and Sad Sad Stories production photo"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-8 lg:p-12">
                 <span className="inline-block bg-silver text-black px-3 py-1 rounded-full text-sm font-semibold mb-4">

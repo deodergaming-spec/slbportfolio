@@ -29,7 +29,7 @@ export default function About() {
               <img 
                 src="/sarah-cropped.png" 
                 alt="Sarah Bond headshot"
-                className="w-full h-full object-cover object-center"
+                className="w-full h-full object-contain"
               />
             </div>
           </div>

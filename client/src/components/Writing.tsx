@@ -60,8 +60,12 @@ export default function Writing() {
             <div className="space-y-8">
               {books.map((book, index) => (
                 <div key={index} className="flex space-x-4">
-                  <div className="w-20 h-28 bg-gray-200 rounded shadow-lg flex-shrink-0 flex items-center justify-center">
-                    <span className="text-gray-500 text-xs text-center">Image Here</span>
+                  <div className="w-20 h-28 rounded shadow-lg flex-shrink-0 overflow-hidden">
+                    <img 
+                      src="/seagulls-book.jpg" 
+                      alt="Seagulls and Sad Sad Stories book cover"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div>
                     <h4 className="text-xl font-playfair font-semibold text-black mb-2">
