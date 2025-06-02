@@ -42,24 +42,14 @@ export default function Hero() {
             className={`absolute inset-0 transition-opacity duration-1000 ${
               index === currentImageIndex ? 'opacity-100' : 'opacity-0'
             }`}
-          >
-            <img
-              src={image}
-              alt={`Theatre production ${index + 1}`}
-              className="w-full h-full object-cover"
-              onLoad={() => setImageLoaded(true)}
-              onError={(e) => {
-                console.log('Image failed to load:', image);
-                // Fallback to a solid color background
-                e.currentTarget.style.display = 'none';
-              }}
-            />
-          </div>
+            style={{
+              backgroundImage: `url('${image}')`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat'
+            }}
+          />
         ))}
-        {/* Fallback background if no images load */}
-        {!imageLoaded && (
-          <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-black"></div>
-        )}
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
       </div>
       
