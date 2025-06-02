@@ -1,6 +1,25 @@
 import { Button } from "@/components/ui/button";
+import { useState, useEffect } from "react";
 
 export default function Hero() {
+  // Hero background images for slideshow
+  const heroImages = [
+    '/school-of-rock.jpg'
+  ];
+  
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  // Auto-advance slideshow every 5 seconds
+  useEffect(() => {
+    if (heroImages.length > 1) {
+      const interval = setInterval(() => {
+        setCurrentImageIndex((prev) => (prev + 1) % heroImages.length);
+      }, 5000);
+      return () => clearInterval(interval);
+    }
+  }, [heroImages.length]);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -15,17 +34,33 @@ export default function Hero() {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center pt-16">
-      {/* Hero background image */}
+      {/* Hero background slideshow */}
       <div className="absolute inset-0 z-0">
-        <div 
-          className="w-full h-full bg-cover bg-center bg-no-repeat"
-          style={{ 
-            backgroundImage: `url('/images/school-of-rock.jpg')`,
-            backgroundColor: '#1a1a1a'
-          }}
-        >
-        </div>
-        <div className="absolute inset-0 bg-black bg-opacity-70"></div>
+        {heroImages.map((image, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-1000 ${
+              index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+            }`}
+          >
+            <img
+              src={image}
+              alt={`Theatre production ${index + 1}`}
+              className="w-full h-full object-cover"
+              onLoad={() => setImageLoaded(true)}
+              onError={(e) => {
+                console.log('Image failed to load:', image);
+                // Fallback to a solid color background
+                e.currentTarget.style.display = 'none';
+              }}
+            />
+          </div>
+        ))}
+        {/* Fallback background if no images load */}
+        {!imageLoaded && (
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-black"></div>
+        )}
+        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
       </div>
       
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
