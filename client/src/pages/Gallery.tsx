@@ -12,13 +12,13 @@ export default function Gallery() {
       title: "Seagulls and Sad Sad Stories - Production",
       category: "Theatre",
       description: "Behind the scenes from the award-winning production",
-      image: null
+      image: "/seagulls-fortune-teller.jpg"
     },
     {
       title: "School of Rock Rehearsals",
       category: "Theatre", 
       description: "Directing the regional amateur debut production",
-      image: null
+      image: "/school-of-rock-stage.jpg"
     },
     {
       title: "Writing Workshop",
@@ -30,7 +30,7 @@ export default function Gallery() {
       title: "Theatre Collaboration",
       category: "Theatre",
       description: "Working with young performers",
-      image: null
+      image: "/seagulls-behind-scenes.jpg"
     },
     {
       title: "Creative Process",
@@ -98,7 +98,15 @@ export default function Gallery() {
                   <Card className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group cursor-pointer w-80 h-96">
                     {/* Image Container */}
                     <div className="relative h-48 bg-gray-200 flex items-center justify-center overflow-hidden">
-                      <span className="text-gray-500 text-lg font-medium">Image Here</span>
+                      {item.image ? (
+                        <img 
+                          src={item.image} 
+                          alt={item.title}
+                          className="w-full h-full object-cover"
+                        />
+                      ) : (
+                        <span className="text-gray-500 text-lg font-medium">Image Here</span>
+                      )}
                       <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
                     </div>
                     
@@ -129,7 +137,15 @@ export default function Gallery() {
                     <Card className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group cursor-pointer w-80 h-96">
                       {/* Image Container */}
                       <div className="relative h-48 bg-gray-200 flex items-center justify-center overflow-hidden">
-                        <span className="text-gray-500 text-lg font-medium">Image Here</span>
+                        {item.image ? (
+                          <img 
+                            src={item.image} 
+                            alt={item.title}
+                            className="w-full h-full object-cover"
+                          />
+                        ) : (
+                          <span className="text-gray-500 text-lg font-medium">Image Here</span>
+                        )}
                         <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
                       </div>
                       
