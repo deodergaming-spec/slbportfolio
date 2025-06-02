@@ -45,7 +45,7 @@ export default function Hero() {
             style={{
               backgroundImage: `url('${image}')`,
               backgroundSize: 'cover',
-              backgroundPosition: '20% center',
+              backgroundPosition: '10% center',
               backgroundRepeat: 'no-repeat'
             }}
           />
