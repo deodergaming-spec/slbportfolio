@@ -7,7 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import { apiRequest } from "@/lib/queryClient";
-import { Mail, Phone, MapPin, Linkedin, Twitter, Instagram, BookOpen } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Twitter, Instagram, BookOpen, Youtube } from "lucide-react";
 
 export default function Contact() {
   const { toast } = useToast();

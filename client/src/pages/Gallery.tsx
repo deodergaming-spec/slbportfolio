@@ -27,12 +27,6 @@ export default function Gallery() {
       image: null
     },
     {
-      title: "Book Launch Event",
-      category: "Publishing",
-      description: "Seagulls and Sad Sad Stories book launch",
-      image: null
-    },
-    {
       title: "Theatre Collaboration",
       category: "Theatre",
       description: "Working with young performers",

@@ -24,14 +24,11 @@ export default function Hero() {
       </div>
       
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 className="text-4xl md:text-6xl font-playfair font-bold text-white mb-6">
+        <h1 className="text-4xl md:text-6xl font-pixel font-bold text-white mb-6">
           Sarah Bond
         </h1>
-        <p className="text-xl md:text-2xl text-white mb-4 font-light">
+        <p className="text-xl md:text-2xl text-white mb-8 font-light">
           Writer and Director
-        </p>
-        <p className="text-lg text-white mb-8 max-w-2xl mx-auto leading-relaxed italic">
-          "Quote will go here"
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button 

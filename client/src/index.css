@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -109,6 +110,10 @@
   
   .font-playfair {
     font-family: 'Playfair Display', serif;
+  }
+
+  .font-pixel {
+    font-family: 'Press Start 2P', cursive;
   }
 
   /* Force proper text visibility in form inputs */
