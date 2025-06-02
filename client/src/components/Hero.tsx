@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 export default function Hero() {
   // Hero background images for slideshow
   const heroImages = [
-    '/assets/08.01.23_School-of-Rock-Promo_Tyne-Theatre-Productions_LPP-31.jpg'
+    '/hero-bg.jpg'
   ];
   
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -50,7 +50,7 @@ export default function Hero() {
             }}
           />
         ))}
-        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+        {/* <div className="absolute inset-0 bg-black bg-opacity-40"></div> */}
       </div>
       
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
