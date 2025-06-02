@@ -4,32 +4,23 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
-            <h2 className="text-4xl font-playfair font-bold text-forest mb-8">About Sarah</h2>
-            <div className="prose prose-lg text-charcoal space-y-6">
+            <h2 className="text-4xl font-playfair font-bold text-black mb-8">About Sarah</h2>
+            <div className="prose prose-lg text-black space-y-6">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Sarah is a writer and director from County Durham.
               </p>
               <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                In 2023, her debut play 'Seagulls and Sad Sad Stories' was the winner of the inaugural Richard Jenkinson Commission. The show enjoyed a very successful run at Laurels, Whitley Bay and the play text was published by Methuen Drama in December 2024.
               </p>
               <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                Sarah began her theatre journey as a volunteer, working with young people in deprived areas on a number of choir, drama, film, and musical productions. In 2022, she directed the regional amateur debut production of 'School of Rock' at the Tyne Theatre and Opera House.
               </p>
-            </div>
-            
-            <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-playfair font-bold text-burnt-orange">25+</div>
-                <div className="text-sm text-charcoal">Productions Directed</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-playfair font-bold text-burnt-orange">12</div>
-                <div className="text-sm text-charcoal">Original Plays</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-playfair font-bold text-burnt-orange">3</div>
-                <div className="text-sm text-charcoal">Published Books</div>
-              </div>
+              <p>
+                Her writing career began in 2018. After graduating from Newcastle University, Sarah worked as a creative advertising copywriter for a major media company. In 2022, she participated in the WriteMentor summer programme with her debut novel 'The Mystics of Little Edmunswick'. In 2024, the novel was shortlisted for the Searchlight Awards 'Best Novel Opening' prize. The work is still in development.
+              </p>
+              <p>
+                Sarah is a fan of anything mystical, magical, or supernatural. Her works include screenplays, stage plays, novels, and picture books. She enjoys exploring themes of class, coming-of-age adventures, friendship, and the supernatural!
+              </p>
             </div>
           </div>
           

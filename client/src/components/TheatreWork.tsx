@@ -3,39 +3,28 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function TheatreWork() {
   const productions = [
     {
-      title: "Play Name",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      venue: "Theatre Venue Name",
-      year: "2023",
+      title: "Seagulls and Sad Sad Stories",
+      description: "Three young lads, hoping for the answers to their maths exam and which girls in their year they stand a chance with, find out more than they bargained for when they put the question of their future to a mystical fortune teller. Faced with harsh realities, cruel stereotypes, and an unnaturally persistent seagull, they must decide whether the perceptions of others will determine their entire life or whether they believe they're worth so much more.",
+      venue: "Laurels, Whitley Bay",
+      year: "2024",
+      role: "Writer and Director",
       image: null,
       featured: true
     },
     {
-      title: "Play Name",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      venue: "Theatre Venue Name",
-      year: "2022",
-      image: null
-    },
-    {
-      title: "Play Name",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      venue: "Theatre Venue Name",
-      year: "2021",
-      image: null
-    },
-    {
-      title: "Play Name",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      venue: "Theatre Venue Name",
+      title: "You Need to Say Sorry",
+      description: "A hard-hitting play about the dangers of online dating and domestic abuse in older couples. Written by Alison Stanley.",
+      venue: "Laurels, Whitley Bay",
       year: "2023",
+      role: "Director",
       image: null
     },
     {
-      title: "Play Name",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      venue: "Theatre Venue Name",
-      year: "2020",
+      title: "School of Rock: The Next Generation",
+      description: "The regional north east amateur debut, featuring a talented cast of over 40 young performers who played their instruments live on stage.",
+      venue: "Tyne Theatre and Opera House",
+      year: "2023",
+      role: "Director",
       image: null
     }
   ];
@@ -47,10 +36,7 @@ export default function TheatreWork() {
     <section id="theatre" className="py-20 bg-light-gray">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-playfair font-bold text-forest mb-4">Theatre Work</h2>
-          <p className="text-xl text-charcoal max-w-2xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+          <h2 className="text-4xl font-playfair font-bold text-black mb-4">Theatre Work</h2>
         </div>
         
         {/* Featured Production */}
@@ -63,19 +49,19 @@ export default function TheatreWork() {
                 </div>
               </div>
               <div className="p-8 lg:p-12">
-                <span className="inline-block bg-burnt-orange text-cream px-3 py-1 rounded-full text-sm font-semibold mb-4">
+                <span className="inline-block bg-silver text-black px-3 py-1 rounded-full text-sm font-semibold mb-4">
                   Featured Production
                 </span>
-                <h3 className="text-2xl font-playfair font-bold text-forest mb-4">
+                <h3 className="text-2xl font-playfair font-bold text-black mb-4">
                   {featuredProduction.title}
                 </h3>
-                <p className="text-charcoal mb-6 leading-relaxed">
+                <p className="text-black mb-6 leading-relaxed">
                   {featuredProduction.description}
                 </p>
-                <div className="space-y-2 text-sm text-charcoal">
+                <div className="space-y-2 text-sm text-black">
                   <div><strong>Venue:</strong> {featuredProduction.venue}</div>
                   <div><strong>Year:</strong> {featuredProduction.year}</div>
-                  <div><strong>Role:</strong> Director & Co-Writer</div>
+                  <div><strong>Role:</strong> {featuredProduction.role}</div>
                 </div>
               </div>
             </div>
@@ -90,14 +76,16 @@ export default function TheatreWork() {
                 <span className="text-gray-500 text-lg font-medium">Image Here</span>
               </div>
               <CardContent className="p-6">
-                <h4 className="text-xl font-playfair font-semibold text-forest mb-2">
+                <h4 className="text-xl font-playfair font-semibold text-black mb-2">
                   {production.title}
                 </h4>
-                <p className="text-charcoal text-sm mb-4">
+                <p className="text-black text-sm mb-4">
                   {production.description}
                 </p>
-                <div className="text-xs text-charcoal">
-                  <div>{production.venue} • {production.year}</div>
+                <div className="text-xs text-black space-y-1">
+                  <div><strong>Venue:</strong> {production.venue}</div>
+                  <div><strong>Year:</strong> {production.year}</div>
+                  <div><strong>Role:</strong> {production.role}</div>
                 </div>
               </CardContent>
             </Card>

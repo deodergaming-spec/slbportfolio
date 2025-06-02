@@ -3,24 +3,10 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function Writing() {
   const books = [
     {
-      title: "Book Title",
-      type: "Genre/Type",
-      year: "2023",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      cover: null
-    },
-    {
-      title: "Book Title",
-      type: "Genre/Type",
-      year: "2022",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      cover: null
-    },
-    {
-      title: "Book Title",
-      type: "Genre/Type",
-      year: "2021",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: "Seagulls and Sad Sad Stories",
+      type: "Play",
+      year: "2024",
+      description: "Three young lads, hoping for the answers to their maths exam and which girls in their year they stand a chance with, find out more than they bargained for when they put the question of their future to a mystical fortune teller. Faced with harsh realities, cruel stereotypes, and an unnaturally persistent seagull, they must decide whether the perceptions of others will determine their entire life or whether they believe they're worth so much more. Available to purchase from all major book retailers.",
       cover: null
     }
   ];
@@ -53,16 +39,23 @@ export default function Writing() {
     <section id="writing" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-playfair font-bold text-forest mb-4">Writing Portfolio</h2>
-          <p className="text-xl text-charcoal max-w-2xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+          <h2 className="text-4xl font-playfair font-bold text-black mb-4">Writing Portfolio</h2>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-          {/* Published Books */}
+        {/* Writing Tabs */}
+        <div className="mb-16">
+          <div className="flex border-b border-gray-200 mb-8">
+            <button className="px-6 py-3 text-black border-b-2 border-black font-medium">
+              Published Works
+            </button>
+            <button className="px-6 py-3 text-gray-500 hover:text-black">
+              Other
+            </button>
+          </div>
+          
+          {/* Published Works */}
           <div>
-            <h3 className="text-2xl font-playfair font-semibold text-forest mb-8">Published Works</h3>
+            <h3 className="text-2xl font-playfair font-semibold text-black mb-8">Published Works</h3>
             
             <div className="space-y-8">
               {books.map((book, index) => (
@@ -71,13 +64,13 @@ export default function Writing() {
                     <span className="text-gray-500 text-xs text-center">Image Here</span>
                   </div>
                   <div>
-                    <h4 className="text-xl font-playfair font-semibold text-forest mb-2">
+                    <h4 className="text-xl font-playfair font-semibold text-black mb-2">
                       {book.title}
                     </h4>
-                    <p className="text-charcoal text-sm mb-2">
+                    <p className="text-black text-sm mb-2">
                       {book.type} • {book.year}
                     </p>
-                    <p className="text-charcoal leading-relaxed">
+                    <p className="text-black leading-relaxed">
                       {book.description}
                     </p>
                   </div>
