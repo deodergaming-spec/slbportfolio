@@ -25,8 +25,15 @@ export default function About() {
           </div>
           
           <div className="order-1 lg:order-2">
-            <div className="w-full h-96 bg-gray-200 rounded-2xl shadow-2xl flex items-center justify-center">
-              <span className="text-gray-500 text-lg font-medium">Image Here</span>
+            <div className="w-full h-96 rounded-2xl shadow-2xl overflow-hidden">
+              <img 
+                src="/sarah-headshot.png" 
+                alt="Sarah Bond headshot"
+                className="w-full h-full object-cover object-center"
+                style={{
+                  objectPosition: 'center 25%'
+                }}
+              />
             </div>
           </div>
         </div>
