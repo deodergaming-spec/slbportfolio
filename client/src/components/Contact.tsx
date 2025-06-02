@@ -176,7 +176,7 @@ export default function Contact() {
                   <div className="flex items-start space-x-4">
                     <Mail className="text-silver text-xl mt-1" size={20} />
                     <div>
-                      <div className="text-white font-medium">Email</div>
+                      <div className="font-medium text-[#000000]">Email</div>
                       <div className="text-white text-sm">sarahlouisebond@outlook.com</div>
                     </div>
                   </div>
