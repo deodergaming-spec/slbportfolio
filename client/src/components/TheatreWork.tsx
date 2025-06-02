@@ -79,7 +79,7 @@ export default function TheatreWork() {
                   <img 
                     src={production.image} 
                     alt={`${production.title} production photo`}
-                    className="w-full h-full object-cover"
+                    className={`w-full h-full ${production.title === "You Need to Say Sorry" ? "object-contain bg-gray-100" : "object-cover"}`}
                   />
                 ) : (
                   <div className="w-full h-full bg-gray-200 flex items-center justify-center">

@@ -27,7 +27,7 @@ export default function About() {
           <div className="order-1 lg:order-2">
             <div className="w-full aspect-square rounded-2xl shadow-2xl overflow-hidden">
               <img 
-                src="/sarah-cropped.png" 
+                src="/sarah-headshot-new.png" 
                 alt="Sarah Bond headshot"
                 className="w-full h-full object-contain"
               />
