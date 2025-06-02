@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "wouter";
 
@@ -6,9 +6,19 @@ export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [location] = useLocation();
 
+  useEffect(() => {
+    // Check for hash in URL when component mounts or location changes
+    const hash = window.location.hash.replace('#', '');
+    if (hash && location === '/') {
+      setTimeout(() => {
+        scrollToSection(hash);
+      }, 100);
+    }
+  }, [location]);
+
   const handleNavigation = (sectionId: string) => {
     if (location === '/gallery') {
-      // If on gallery page, navigate to home first then scroll
+      // If on gallery page, navigate to home with hash
       window.location.href = `/#${sectionId}`;
     } else {
       // If on home page, just scroll to section
