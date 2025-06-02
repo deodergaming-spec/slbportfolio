@@ -17,9 +17,11 @@ export default function Hero() {
     <section id="home" className="relative min-h-screen flex items-center justify-center pt-16">
       {/* Hero background image */}
       <div className="absolute inset-0 z-0">
-        <div className="w-full h-full bg-gray-200 flex items-center justify-center">
-          <span className="text-gray-500 text-lg font-medium">Image Here</span>
-        </div>
+        <img 
+          src="/attached_assets/08.01.23_School-of-Rock-Promo_Tyne-Theatre-Productions_LPP-31.jpg" 
+          alt="School of Rock production cast" 
+          className="w-full h-full object-cover"
+        />
         <div className="absolute inset-0 bg-black bg-opacity-70"></div>
       </div>
       
