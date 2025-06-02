@@ -2,8 +2,11 @@ import { Card } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
+import { useState } from "react";
 
 export default function Gallery() {
+  const [activeFilter, setActiveFilter] = useState("All");
+  
   const galleryItems = [
     {
       title: "Seagulls and Sad Sad Stories - Production",
@@ -45,6 +48,10 @@ export default function Gallery() {
 
   const categories = ["All", "Theatre", "Writing", "Publishing"];
 
+  const filteredItems = activeFilter === "All" 
+    ? galleryItems 
+    : galleryItems.filter(item => item.category === activeFilter);
+
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
@@ -77,7 +84,12 @@ export default function Gallery() {
               {categories.map((category) => (
                 <button
                   key={category}
-                  className="px-6 py-2 bg-white text-black border border-gray-300 rounded-lg hover:bg-black hover:text-white transition-all duration-200"
+                  onClick={() => setActiveFilter(category)}
+                  className={`px-6 py-2 border border-gray-300 rounded-lg transition-all duration-200 ${
+                    activeFilter === category 
+                      ? 'bg-black text-white' 
+                      : 'bg-white text-black hover:bg-black hover:text-white'
+                  }`}
                 >
                   {category}
                 </button>
@@ -87,7 +99,7 @@ export default function Gallery() {
 
           {/* Gallery Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {galleryItems.map((item, index) => (
+            {filteredItems.map((item, index) => (
               <Card key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
                 {/* Image Container */}
                 <div className="relative h-64 bg-gray-200 flex items-center justify-center overflow-hidden">
