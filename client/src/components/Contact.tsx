@@ -19,6 +19,35 @@ export default function Contact() {
     message: ""
   });
 
+  const [errors, setErrors] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: ""
+  });
+
+  // Validation functions
+  const validateName = (name: string) => {
+    const nameRegex = /^[a-zA-Z\s'-]+$/;
+    if (!name.trim()) return "This field is required";
+    if (!nameRegex.test(name)) return "Name can only contain letters, spaces, hyphens, and apostrophes";
+    if (name.length < 2) return "Name must be at least 2 characters";
+    return "";
+  };
+
+  const validateEmail = (email: string) => {
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!email.trim()) return "Email is required";
+    if (!emailRegex.test(email)) return "Please enter a valid email address";
+    return "";
+  };
+
+  const validateMessage = (message: string) => {
+    if (!message.trim()) return "Message is required";
+    if (message.length < 10) return "Message must be at least 10 characters";
+    return "";
+  };
+
   const contactMutation = useMutation({
     mutationFn: async (data: typeof formData) => {
       return await apiRequest("POST", "/api/contact", data);
@@ -48,11 +77,24 @@ export default function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Basic validation
-    if (!formData.firstName || !formData.lastName || !formData.email || !formData.message) {
+    // Validate all fields
+    const firstNameError = validateName(formData.firstName);
+    const lastNameError = validateName(formData.lastName);
+    const emailError = validateEmail(formData.email);
+    const messageError = validateMessage(formData.message);
+
+    setErrors({
+      firstName: firstNameError,
+      lastName: lastNameError,
+      email: emailError,
+      message: messageError
+    });
+
+    // Check if there are any errors
+    if (firstNameError || lastNameError || emailError || messageError) {
       toast({
         title: "Validation Error",
-        description: "Please fill in all required fields.",
+        description: "Please fix the errors in the form before submitting.",
         variant: "destructive",
       });
       return;
@@ -66,6 +108,18 @@ export default function Contact() {
       ...prev,
       [field]: value
     }));
+
+    // Clear error when user starts typing and validate in real-time
+    if (field === 'firstName' || field === 'lastName') {
+      const error = validateName(value);
+      setErrors(prev => ({ ...prev, [field]: error }));
+    } else if (field === 'email') {
+      const error = validateEmail(value);
+      setErrors(prev => ({ ...prev, email: error }));
+    } else if (field === 'message') {
+      const error = validateMessage(value);
+      setErrors(prev => ({ ...prev, message: error }));
+    }
   };
 
   return (
@@ -87,41 +141,56 @@ export default function Contact() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="firstName" className="block text-sm font-medium text-black mb-2">
-                      First Name *
+                      First Name {!formData.firstName && '*'}
                     </label>
                     <Input
                       id="firstName"
                       type="text"
                       value={formData.firstName}
                       onChange={(e) => handleInputChange('firstName', e.target.value)}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-all duration-200 bg-white text-black"
+                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-all duration-200 bg-white text-black ${
+                        errors.firstName ? 'border-red-500' : 'border-gray-300'
+                      }`}
                     />
+                    {errors.firstName && (
+                      <p className="text-red-500 text-xs mt-1">{errors.firstName}</p>
+                    )}
                   </div>
                   <div>
                     <label htmlFor="lastName" className="block text-sm font-medium text-black mb-2">
-                      Last Name *
+                      Last Name {!formData.lastName && '*'}
                     </label>
                     <Input
                       id="lastName"
                       type="text"
                       value={formData.lastName}
                       onChange={(e) => handleInputChange('lastName', e.target.value)}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-all duration-200 bg-white text-black"
+                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-all duration-200 bg-white text-black ${
+                        errors.lastName ? 'border-red-500' : 'border-gray-300'
+                      }`}
                     />
+                    {errors.lastName && (
+                      <p className="text-red-500 text-xs mt-1">{errors.lastName}</p>
+                    )}
                   </div>
                 </div>
                 
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-black mb-2">
-                    Email Address *
+                    Email Address {!formData.email && '*'}
                   </label>
                   <Input
                     id="email"
                     type="email"
                     value={formData.email}
                     onChange={(e) => handleInputChange('email', e.target.value)}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-all duration-200 bg-white text-black"
+                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-all duration-200 bg-white text-black ${
+                      errors.email ? 'border-red-500' : 'border-gray-300'
+                    }`}
                   />
+                  {errors.email && (
+                    <p className="text-red-500 text-xs mt-1">{errors.email}</p>
+                  )}
                 </div>
                 
                 <div>
@@ -144,7 +213,7 @@ export default function Contact() {
                 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-black mb-2">
-                    Message *
+                    Message {!formData.message && '*'}
                   </label>
                   <Textarea
                     id="message"
@@ -152,8 +221,13 @@ export default function Contact() {
                     value={formData.message}
                     onChange={(e) => handleInputChange('message', e.target.value)}
                     placeholder="Tell me about your project or inquiry..."
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-all duration-200 resize-none bg-white text-black placeholder:text-gray-500"
+                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-all duration-200 resize-none bg-white text-black placeholder:text-gray-500 ${
+                      errors.message ? 'border-red-500' : 'border-gray-300'
+                    }`}
                   />
+                  {errors.message && (
+                    <p className="text-red-500 text-xs mt-1">{errors.message}</p>
+                  )}
                 </div>
                 
                 <Button
