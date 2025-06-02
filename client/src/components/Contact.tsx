@@ -195,7 +195,7 @@ export default function Contact() {
             {/* Social Media & Professional Links */}
             <Card className="bg-white bg-opacity-10 rounded-2xl p-8">
               <CardContent className="p-0">
-                <h3 className="text-2xl font-playfair font-semibold text-white mb-6">Connect Online</h3>
+                <h3 className="text-2xl font-playfair font-semibold mb-6 text-[#000000]">Connect Online</h3>
                 <div className="flex space-x-4">
                   <a href="#" className="w-12 h-12 bg-silver rounded-full flex items-center justify-center text-black hover:bg-silver/80 transition-all duration-200">
                     <Linkedin size={20} />
