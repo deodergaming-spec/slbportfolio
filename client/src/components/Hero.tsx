@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 export default function Hero() {
   // Hero background images for slideshow
   const heroImages = [
-    '/school-of-rock.jpg'
+    '/assets/08.01.23_School-of-Rock-Promo_Tyne-Theatre-Productions_LPP-31.jpg'
   ];
   
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
