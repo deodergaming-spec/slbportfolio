@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import schoolOfRockImage from "@assets/08.01.23_School-of-Rock-Promo_Tyne-Theatre-Productions_LPP-31.jpg";
 
 export default function Hero() {
   const scrollToSection = (sectionId: string) => {
@@ -18,11 +17,14 @@ export default function Hero() {
     <section id="home" className="relative min-h-screen flex items-center justify-center pt-16">
       {/* Hero background image */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={schoolOfRockImage} 
-          alt="School of Rock production cast" 
-          className="w-full h-full object-cover"
-        />
+        <div 
+          className="w-full h-full bg-cover bg-center bg-no-repeat"
+          style={{ 
+            backgroundImage: `url('/images/school-of-rock.jpg')`,
+            backgroundColor: '#1a1a1a'
+          }}
+        >
+        </div>
         <div className="absolute inset-0 bg-black bg-opacity-70"></div>
       </div>
       
