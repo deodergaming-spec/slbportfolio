@@ -43,12 +43,12 @@ export default function Footer() {
               >
                 Writing Portfolio
               </button>
-              <button 
-                onClick={() => scrollToSection('gallery')}
+              <a 
+                href="/gallery"
                 className="block text-gray-300 hover:text-silver transition-colors duration-200 text-sm text-left"
               >
                 Gallery
-              </button>
+              </a>
               <button 
                 onClick={() => scrollToSection('contact')}
                 className="block text-gray-300 hover:text-silver transition-colors duration-200 text-sm text-left"

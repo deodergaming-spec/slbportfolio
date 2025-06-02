@@ -53,12 +53,9 @@ export default function Navigation() {
               >
                 Writing
               </button>
-              <button 
-                onClick={() => scrollToSection('gallery')}
-                className="text-black hover:text-silver transition-colors duration-200 font-medium"
-              >
+              <Link href="/gallery" className="text-black hover:text-silver transition-colors duration-200 font-medium">
                 Gallery
-              </button>
+              </Link>
               <button 
                 onClick={() => scrollToSection('contact')}
                 className="text-black hover:text-silver transition-colors duration-200 font-medium"
@@ -108,12 +105,9 @@ export default function Navigation() {
             >
               Writing
             </button>
-            <button 
-              onClick={() => scrollToSection('gallery')}
-              className="block w-full text-left px-3 py-2 text-black hover:text-silver transition-colors duration-200 font-medium"
-            >
+            <Link href="/gallery" className="block w-full text-left px-3 py-2 text-black hover:text-silver transition-colors duration-200 font-medium">
               Gallery
-            </button>
+            </Link>
             <button 
               onClick={() => scrollToSection('contact')}
               className="block w-full text-left px-3 py-2 text-black hover:text-silver transition-colors duration-200 font-medium"
