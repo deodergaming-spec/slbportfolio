@@ -114,15 +114,37 @@
   /* Force proper text visibility in form inputs */
   input[type="text"], 
   input[type="email"], 
-  textarea {
+  textarea,
+  .contact-form input,
+  .contact-form textarea,
+  [data-testid="input"],
+  [role="textbox"] {
     color: #000000 !important;
     background-color: #ffffff !important;
   }
 
   input[type="text"]::placeholder, 
   input[type="email"]::placeholder, 
-  textarea::placeholder {
+  textarea::placeholder,
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
     color: #666666 !important;
+  }
+
+  /* Force contact form text visibility */
+  #contact input,
+  #contact textarea,
+  #contact .select-trigger,
+  .contact-form *,
+  [data-radix-collection-item] {
+    color: #000000 !important;
+    background-color: #ffffff !important;
+  }
+
+  /* Override any inherited styles */
+  .contact-form input[value],
+  .contact-form textarea {
+    color: #000000 !important;
   }
 
   /* Hero background gradient */

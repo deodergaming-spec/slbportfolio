@@ -83,7 +83,7 @@ export default function Contact() {
           <Card className="bg-white rounded-2xl p-8 shadow-xl">
             <CardContent className="p-0">
               <h3 className="text-2xl font-playfair font-semibold text-black mb-6">Send a Message</h3>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6 contact-form">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="firstName" className="block text-sm font-medium text-black mb-2">
