@@ -27,12 +27,9 @@ export default function About() {
           <div className="order-1 lg:order-2">
             <div className="w-full h-96 rounded-2xl shadow-2xl overflow-hidden">
               <img 
-                src="/sarah-headshot.png" 
+                src="/sarah-cropped.png" 
                 alt="Sarah Bond headshot"
                 className="w-full h-full object-cover object-center"
-                style={{
-                  objectPosition: 'center 25%'
-                }}
               />
             </div>
           </div>
