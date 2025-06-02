@@ -20,30 +20,30 @@ export default function Hero() {
         <div className="w-full h-full bg-gray-200 flex items-center justify-center">
           <span className="text-gray-500 text-lg font-medium">Image Here</span>
         </div>
-        <div className="absolute inset-0 bg-forest bg-opacity-70"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-70"></div>
       </div>
       
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 className="text-4xl md:text-6xl font-playfair font-bold text-cream mb-6">
+        <h1 className="text-4xl md:text-6xl font-playfair font-bold text-white mb-6">
           Sarah Bond
         </h1>
-        <p className="text-xl md:text-2xl text-cream mb-4 font-light">
-          Theatre Director • Playwright • Author
+        <p className="text-xl md:text-2xl text-white mb-4 font-light">
+          Writer and Director
         </p>
-        <p className="text-lg text-cream mb-8 max-w-2xl mx-auto leading-relaxed">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <p className="text-lg text-white mb-8 max-w-2xl mx-auto leading-relaxed italic">
+          "Quote will go here"
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button 
             onClick={() => scrollToSection('theatre')}
-            className="bg-burnt-orange text-cream px-8 py-3 rounded-lg font-semibold hover:bg-burnt-orange/90 transition-all duration-200 transform hover:scale-105"
+            className="bg-silver text-black px-8 py-3 rounded-lg font-semibold hover:bg-silver/90 transition-all duration-200 transform hover:scale-105"
           >
             View Theatre Work
           </Button>
           <Button 
             onClick={() => scrollToSection('writing')}
             variant="outline"
-            className="border-2 border-cream text-cream px-8 py-3 rounded-lg font-semibold hover:bg-cream hover:text-forest transition-all duration-200"
+            className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-black transition-all duration-200"
           >
             Explore Writing
           </Button>

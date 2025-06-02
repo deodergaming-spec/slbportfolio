@@ -3,25 +3,25 @@
 @tailwind utilities;
 
 :root {
-  --background: 45 25% 97%; /* #F8F4E6 - cream */
-  --foreground: 210 11% 18%; /* #2D3436 - charcoal */
-  --muted: 210 11% 95%; /* #F1F3F4 - light gray */
-  --muted-foreground: 210 11% 45%; /* #718096 - muted gray */
-  --popover: 45 25% 97%; /* #F8F4E6 - cream */
-  --popover-foreground: 210 11% 18%; /* #2D3436 - charcoal */
+  --background: 0 0% 100%; /* white */
+  --foreground: 0 0% 0%; /* black */
+  --muted: 0 0% 96%; /* light gray */
+  --muted-foreground: 0 0% 45%; /* muted gray */
+  --popover: 0 0% 100%; /* white */
+  --popover-foreground: 0 0% 0%; /* black */
   --card: 0 0% 100%; /* white */
-  --card-foreground: 210 11% 18%; /* #2D3436 - charcoal */
-  --border: 210 11% 90%; /* light border */
-  --input: 210 11% 90%; /* input border */
-  --primary: 155 60% 22%; /* #1B4332 - forest green */
-  --primary-foreground: 45 25% 97%; /* #F8F4E6 - cream */
-  --secondary: 210 11% 95%; /* #F1F3F4 - light gray */
-  --secondary-foreground: 210 11% 18%; /* #2D3436 - charcoal */
-  --accent: 21 65% 55%; /* #CC6B49 - burnt orange */
-  --accent-foreground: 45 25% 97%; /* #F8F4E6 - cream */
+  --card-foreground: 0 0% 0%; /* black */
+  --border: 0 0% 85%; /* light border */
+  --input: 0 0% 85%; /* input border */
+  --primary: 0 0% 0%; /* black */
+  --primary-foreground: 0 0% 100%; /* white */
+  --secondary: 0 0% 75%; /* silver */
+  --secondary-foreground: 0 0% 0%; /* black */
+  --accent: 0 0% 60%; /* darker silver */
+  --accent-foreground: 0 0% 100%; /* white */
   --destructive: 0 84.2% 60.2%;
-  --destructive-foreground: 60 9.1% 97.8%;
-  --ring: 155 60% 22%; /* #1B4332 - forest green */
+  --destructive-foreground: 0 0% 100%;
+  --ring: 0 0% 0%; /* black */
   --radius: 0.5rem;
 }
 
@@ -63,48 +63,48 @@
 }
 
 @layer utilities {
-  .text-forest {
-    color: hsl(155 60% 22%);
+  .text-black {
+    color: hsl(0 0% 0%);
   }
   
-  .text-cream {
-    color: hsl(45 25% 97%);
+  .text-white {
+    color: hsl(0 0% 100%);
   }
   
-  .text-burnt-orange {
-    color: hsl(21 65% 55%);
+  .text-silver {
+    color: hsl(0 0% 75%);
   }
   
-  .text-charcoal {
-    color: hsl(210 11% 18%);
+  .text-dark-silver {
+    color: hsl(0 0% 60%);
   }
   
-  .bg-forest {
-    background-color: hsl(155 60% 22%);
+  .bg-black {
+    background-color: hsl(0 0% 0%);
   }
   
-  .bg-cream {
-    background-color: hsl(45 25% 97%);
+  .bg-white {
+    background-color: hsl(0 0% 100%);
   }
   
-  .bg-burnt-orange {
-    background-color: hsl(21 65% 55%);
+  .bg-silver {
+    background-color: hsl(0 0% 75%);
   }
   
-  .bg-light-gray {
-    background-color: hsl(210 11% 95%);
+  .bg-light-silver {
+    background-color: hsl(0 0% 90%);
   }
   
-  .border-forest {
-    border-color: hsl(155 60% 22%);
+  .border-black {
+    border-color: hsl(0 0% 0%);
   }
   
-  .border-burnt-orange {
-    border-color: hsl(21 65% 55%);
+  .border-silver {
+    border-color: hsl(0 0% 75%);
   }
   
-  .hover\:bg-burnt-orange\/90:hover {
-    background-color: hsl(21 65% 55% / 0.9);
+  .hover\:bg-silver\/90:hover {
+    background-color: hsl(0 0% 75% / 0.9);
   }
   
   .font-playfair {
