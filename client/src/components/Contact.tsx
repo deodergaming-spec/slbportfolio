@@ -69,12 +69,12 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-forest">
+    <section id="contact" className="py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-playfair font-bold text-cream mb-4">Let's Work Together</h2>
-          <p className="text-xl text-cream max-w-2xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <h2 className="text-4xl font-playfair font-bold text-white mb-4">Let's Work Together!</h2>
+          <p className="text-xl text-white max-w-2xl mx-auto">
+            Sarah is always looking for new and exciting projects to work on. Get in touch to discuss your idea!
           </p>
         </div>
         
@@ -82,7 +82,7 @@ export default function Contact() {
           {/* Contact Form */}
           <Card className="bg-white rounded-2xl p-8 shadow-xl">
             <CardContent className="p-0">
-              <h3 className="text-2xl font-playfair font-semibold text-forest mb-6">Send a Message</h3>
+              <h3 className="text-2xl font-playfair font-semibold text-black mb-6">Send a Message</h3>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
@@ -171,29 +171,21 @@ export default function Contact() {
           <div className="space-y-8">
             <Card className="bg-white bg-opacity-10 rounded-2xl p-8">
               <CardContent className="p-0">
-                <h3 className="text-2xl font-playfair font-semibold text-cream mb-6">Get in Touch</h3>
+                <h3 className="text-2xl font-playfair font-semibold text-white mb-6">Get in Touch</h3>
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    <Mail className="text-burnt-orange text-xl mt-1" size={20} />
+                    <Mail className="text-silver text-xl mt-1" size={20} />
                     <div>
-                      <div className="text-cream font-medium">Email</div>
-                      <div className="text-cream text-sm">sarah.bond@email.com</div>
+                      <div className="text-white font-medium">Email</div>
+                      <div className="text-white text-sm">sarahlouisebond@outlook.com</div>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-4">
-                    <Phone className="text-burnt-orange text-xl mt-1" size={20} />
+                    <MapPin className="text-silver text-xl mt-1" size={20} />
                     <div>
-                      <div className="text-cream font-medium">Phone</div>
-                      <div className="text-cream text-sm">+1 (555) 123-4567</div>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start space-x-4">
-                    <MapPin className="text-burnt-orange text-xl mt-1" size={20} />
-                    <div>
-                      <div className="text-cream font-medium">Location</div>
-                      <div className="text-cream text-sm">New York, NY</div>
+                      <div className="text-white font-medium">Location</div>
+                      <div className="text-white text-sm">North East, England</div>
                     </div>
                   </div>
                 </div>
@@ -203,52 +195,14 @@ export default function Contact() {
             {/* Social Media & Professional Links */}
             <Card className="bg-white bg-opacity-10 rounded-2xl p-8">
               <CardContent className="p-0">
-                <h3 className="text-2xl font-playfair font-semibold text-cream mb-6">Connect Online</h3>
+                <h3 className="text-2xl font-playfair font-semibold text-white mb-6">Connect Online</h3>
                 <div className="flex space-x-4">
-                  <a href="#" className="w-12 h-12 bg-burnt-orange rounded-full flex items-center justify-center text-cream hover:bg-burnt-orange/80 transition-all duration-200">
+                  <a href="#" className="w-12 h-12 bg-silver rounded-full flex items-center justify-center text-black hover:bg-silver/80 transition-all duration-200">
                     <Linkedin size={20} />
                   </a>
-                  <a href="#" className="w-12 h-12 bg-burnt-orange rounded-full flex items-center justify-center text-cream hover:bg-burnt-orange/80 transition-all duration-200">
-                    <Twitter size={20} />
-                  </a>
-                  <a href="#" className="w-12 h-12 bg-burnt-orange rounded-full flex items-center justify-center text-cream hover:bg-burnt-orange/80 transition-all duration-200">
+                  <a href="#" className="w-12 h-12 bg-silver rounded-full flex items-center justify-center text-black hover:bg-silver/80 transition-all duration-200">
                     <Instagram size={20} />
                   </a>
-                  <a href="#" className="w-12 h-12 bg-burnt-orange rounded-full flex items-center justify-center text-cream hover:bg-burnt-orange/80 transition-all duration-200">
-                    <BookOpen size={20} />
-                  </a>
-                </div>
-                
-                <div className="mt-6 space-y-3">
-                  <div className="text-cream text-sm">
-                    <strong>Professional Memberships:</strong>
-                  </div>
-                  <div className="text-cream text-sm space-y-1">
-                    <div>• Lorem ipsum dolor sit</div>
-                    <div>• Consectetur adipiscing elit</div>
-                    <div>• Sed do eiusmod tempor</div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-            
-            {/* Representation */}
-            <Card className="bg-white bg-opacity-10 rounded-2xl p-8">
-              <CardContent className="p-0">
-                <h3 className="text-2xl font-playfair font-semibold text-cream mb-6">Representation</h3>
-                <div className="space-y-4 text-cream text-sm">
-                  <div>
-                    <strong>Literary Agent:</strong><br />
-                    Agent Name<br />
-                    Agency Name<br />
-                    agent@agency.com
-                  </div>
-                  <div>
-                    <strong>Theatre Agent:</strong><br />
-                    Agent Name<br />
-                    Agency Name<br />
-                    agent@agency.com
-                  </div>
                 </div>
               </CardContent>
             </Card>

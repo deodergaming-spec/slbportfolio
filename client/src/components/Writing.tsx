@@ -79,38 +79,10 @@ export default function Writing() {
             </div>
           </div>
           
-          {/* Recent Plays */}
-          <div>
-            <h3 className="text-2xl font-playfair font-semibold text-forest mb-8">Recent Plays</h3>
-            
-            <div className="space-y-6">
-              {plays.map((play, index) => (
-                <Card key={index} className="bg-light-gray p-6 rounded-xl">
-                  <CardContent className="p-0">
-                    <h4 className="text-xl font-playfair font-semibold text-forest mb-2">
-                      "{play.title}"
-                    </h4>
-                    <p className="text-charcoal text-sm mb-3">
-                      {play.type} • {play.year}
-                    </p>
-                    <p className="text-charcoal leading-relaxed mb-4">
-                      {play.description}
-                    </p>
-                    <div className="text-sm text-charcoal">
-                      {play.awards && (
-                        <div><strong>Awards:</strong> {play.awards}</div>
-                      )}
-                      {play.productions && (
-                        <div><strong>Productions:</strong> {play.productions}</div>
-                      )}
-                      {play.status && (
-                        <div><strong>Status:</strong> {play.status}</div>
-                      )}
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+          {/* Writing Workshops - placeholder for future content */}
+          <div className="mt-12">
+            <h3 className="text-2xl font-playfair font-semibold text-black mb-8">Writing Workshops</h3>
+            <p className="text-gray-600">Content coming soon...</p>
           </div>
         </div>
         
@@ -119,10 +91,10 @@ export default function Writing() {
           <div className="w-full h-64 md:h-80 bg-gray-200 flex items-center justify-center">
             <span className="text-gray-500 text-lg font-medium">Image Here</span>
           </div>
-          <div className="absolute inset-0 bg-forest bg-opacity-60 flex items-center justify-center">
-            <div className="text-center text-cream">
+          <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
+            <div className="text-center text-white">
               <h3 className="text-3xl font-playfair font-bold mb-4">The Writing Process</h3>
-              <p className="text-lg max-w-2xl mx-auto px-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              <p className="text-lg max-w-2xl mx-auto px-4">Sarah's creative workspace and writing journey</p>
             </div>
           </div>
         </div>
