@@ -33,7 +33,7 @@ export default function TheatreWork() {
   const otherProductions = productions.filter(p => !p.featured);
 
   return (
-    <section id="theatre" className="py-20 bg-light-gray">
+    <section id="theatre" className="py-20 bg-light-silver">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-playfair font-bold text-black mb-4">Theatre Work</h2>
