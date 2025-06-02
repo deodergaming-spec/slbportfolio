@@ -54,14 +54,22 @@ export default function Hero() {
       </div>
       
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="bg-black bg-opacity-40 rounded-lg p-8 backdrop-blur-sm">
-          <h1 className="text-4xl md:text-6xl font-pixel font-bold text-white mb-6" style={{ textShadow: '3px 3px 6px rgba(0,0,0,1)' }}>
-            Sarah Bond
-          </h1>
-          <p className="text-xl md:text-2xl text-white mb-8 font-light" style={{ textShadow: '2px 2px 4px rgba(0,0,0,1)' }}>
-            Writer and Director
-          </p>
-        </div>
+        <h1 className="text-4xl md:text-6xl font-pixel font-bold mb-6" 
+            style={{ 
+              color: 'white',
+              textShadow: '4px 4px 8px rgba(0,0,0,1), -1px -1px 2px rgba(0,0,0,1), 1px -1px 2px rgba(0,0,0,1), -1px 1px 2px rgba(0,0,0,1), 1px 1px 2px rgba(0,0,0,1)',
+              WebkitTextStroke: '1px black'
+            }}>
+          Sarah Bond
+        </h1>
+        <p className="text-xl md:text-2xl mb-8 font-light" 
+           style={{ 
+             color: 'white',
+             textShadow: '3px 3px 6px rgba(0,0,0,1), -1px -1px 2px rgba(0,0,0,1), 1px -1px 2px rgba(0,0,0,1), -1px 1px 2px rgba(0,0,0,1), 1px 1px 2px rgba(0,0,0,1)',
+             WebkitTextStroke: '0.5px black'
+           }}>
+          Writer and Director
+        </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
           <Button 
             onClick={() => scrollToSection('theatre')}
