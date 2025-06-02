@@ -177,7 +177,7 @@ export default function Contact() {
                     <Mail className="text-silver text-xl mt-1" size={20} />
                     <div>
                       <div className="font-medium text-[#000000]">Email</div>
-                      <div className="text-white text-sm">sarahlouisebond@outlook.com</div>
+                      <div className="text-sm text-[#000000]">sarahlouisebond@outlook.com</div>
                     </div>
                   </div>
                   
