@@ -73,7 +73,7 @@ export default function TheatreWork() {
         {/* Production Gallery */}
         <div className="flex flex-wrap justify-center gap-8 max-w-4xl mx-auto">
           {otherProductions.map((production, index) => (
-            <Card key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 w-80 flex-shrink-0">
+            <Card key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 w-80 h-96 flex-shrink-0">
               <div className="w-full h-48 overflow-hidden">
                 {production.image ? (
                   <img 
