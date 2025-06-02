@@ -100,14 +100,13 @@ export default function Gallery() {
                     <div className="relative h-48 bg-gray-200 flex items-center justify-center overflow-hidden">
                       {item.image ? (
                         <img 
-                          src={item.image} 
+                          src={`${item.image}?v=${Date.now()}`} 
                           alt={item.title}
                           className="w-full h-full object-cover"
                         />
                       ) : (
                         <span className="text-gray-500 text-lg font-medium">Image Here</span>
                       )}
-                      <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
                     </div>
                     
                     {/* Content */}
@@ -139,14 +138,13 @@ export default function Gallery() {
                       <div className="relative h-48 bg-gray-200 flex items-center justify-center overflow-hidden">
                         {item.image ? (
                           <img 
-                            src={item.image} 
+                            src={`${item.image}?v=${Date.now()}`} 
                             alt={item.title}
                             className="w-full h-full object-cover"
                           />
                         ) : (
                           <span className="text-gray-500 text-lg font-medium">Image Here</span>
                         )}
-                        <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
                       </div>
                       
                       {/* Content */}
