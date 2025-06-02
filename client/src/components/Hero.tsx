@@ -43,7 +43,7 @@ export default function Hero() {
           <Button 
             onClick={() => scrollToSection('writing')}
             variant="outline"
-            className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-black transition-all duration-200"
+            className="border-2 border-white text-white bg-transparent px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-black transition-all duration-200"
           >
             Explore Writing
           </Button>
