@@ -184,7 +184,7 @@ export default function Contact() {
                   <div className="flex items-start space-x-4">
                     <MapPin className="text-silver text-xl mt-1" size={20} />
                     <div>
-                      <div className="text-white font-medium">Location</div>
+                      <div className="font-medium text-[#000000]">Location</div>
                       <div className="text-white text-sm">North East, England</div>
                     </div>
                   </div>
