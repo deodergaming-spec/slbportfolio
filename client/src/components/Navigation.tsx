@@ -17,8 +17,8 @@ export default function Navigation() {
   }, [location]);
 
   const handleNavigation = (sectionId: string) => {
-    if (location === '/gallery') {
-      // If on gallery page, navigate to home with hash
+    if (location !== '/') {
+      // If not on home page, navigate to home with hash
       window.location.href = `/#${sectionId}`;
     } else {
       // If on home page, just scroll to section

@@ -1,12 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowLeft } from "lucide-react";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 export default function Workshops() {
   return (
     <div className="min-h-screen bg-white">
+      <Navigation />
       {/* Header */}
-      <div className="bg-black text-white py-8">
+      <div className="bg-black text-white py-8 pt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link href="/#writing">
             <Button variant="outline" className="mb-4 text-white border-white hover:bg-white hover:text-black">
@@ -81,6 +84,8 @@ export default function Workshops() {
           </Link>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }

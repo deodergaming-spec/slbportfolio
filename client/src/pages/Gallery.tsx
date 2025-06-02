@@ -60,10 +60,8 @@ export default function Gallery() {
             A visual journey through Sarah's theatrical productions, writing process, and creative collaborations
           </p>
           <div className="mt-8">
-            <Link href="/">
-              <a className="text-silver hover:text-white transition-colors duration-200">
+            <Link href="/" className="text-silver hover:text-white transition-colors duration-200">
                 ← Back to Home
-              </a>
             </Link>
           </div>
         </div>
