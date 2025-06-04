@@ -44,7 +44,7 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <h1 className="text-black font-pixel text-xl font-semibold">Sarah Bond</h1>
+            <h1 className="text-black font-pixel text-xl font-semibold border border-gray-300 px-3 py-1 rounded">Sarah Bond</h1>
           </div>
           
           {/* Desktop Navigation */}
