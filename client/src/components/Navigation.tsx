@@ -44,7 +44,7 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-12">
           <div className="flex-shrink-0">
-            <h1 className="text-black font-pixel text-xl font-semibold border border-gray-300 px-3 py-1 rounded">Sarah Bond</h1>
+            <h1 className="text-yellow-500 font-pixel text-xl font-semibold border border-gray-300 px-3 py-1 rounded">Sarah Bond</h1>
           </div>
           
           {/* Desktop Navigation */}
@@ -52,34 +52,34 @@ export default function Navigation() {
             <div className="ml-10 flex items-baseline space-x-8">
               <button 
                 onClick={() => handleNavigation('home')}
-                className="text-black hover:text-silver transition-colors duration-200 font-pixel text-xs"
+                className="text-yellow-500 hover:text-silver transition-colors duration-200 font-pixel text-xs"
               >
                 Home
               </button>
               <button 
                 onClick={() => handleNavigation('about')}
-                className="text-black hover:text-silver transition-colors duration-200 font-pixel text-xs"
+                className="text-yellow-500 hover:text-silver transition-colors duration-200 font-pixel text-xs"
               >
                 About
               </button>
               <button 
                 onClick={() => handleNavigation('theatre')}
-                className="text-black hover:text-silver transition-colors duration-200 font-pixel text-xs"
+                className="text-yellow-500 hover:text-silver transition-colors duration-200 font-pixel text-xs"
               >
                 Theatre Work
               </button>
               <button 
                 onClick={() => handleNavigation('writing')}
-                className="text-black hover:text-silver transition-colors duration-200 font-pixel text-xs"
+                className="text-yellow-500 hover:text-silver transition-colors duration-200 font-pixel text-xs"
               >
                 Writing
               </button>
-              <Link href="/gallery" className="text-black hover:text-silver transition-colors duration-200 font-pixel text-xs">
+              <Link href="/gallery" className="text-yellow-500 hover:text-silver transition-colors duration-200 font-pixel text-xs">
                 Gallery
               </Link>
               <button 
                 onClick={() => handleNavigation('contact')}
-                className="text-black hover:text-silver transition-colors duration-200 font-pixel text-xs"
+                className="text-yellow-500 hover:text-silver transition-colors duration-200 font-pixel text-xs"
               >
                 Contact
               </button>
@@ -104,34 +104,34 @@ export default function Navigation() {
           <div className="px-2 pt-2 pb-3 space-y-1">
             <button 
               onClick={() => handleNavigation('home')}
-              className="block w-full text-left px-3 py-2 text-black hover:text-silver transition-colors duration-200 font-pixel text-xs"
+              className="block w-full text-left px-3 py-2 text-yellow-500 hover:text-silver transition-colors duration-200 font-pixel text-xs"
             >
               Home
             </button>
             <button 
               onClick={() => handleNavigation('about')}
-              className="block w-full text-left px-3 py-2 text-black hover:text-silver transition-colors duration-200 font-pixel text-xs"
+              className="block w-full text-left px-3 py-2 text-yellow-500 hover:text-silver transition-colors duration-200 font-pixel text-xs"
             >
               About
             </button>
             <button 
               onClick={() => handleNavigation('theatre')}
-              className="block w-full text-left px-3 py-2 text-black hover:text-silver transition-colors duration-200 font-pixel text-xs"
+              className="block w-full text-left px-3 py-2 text-yellow-500 hover:text-silver transition-colors duration-200 font-pixel text-xs"
             >
               Theatre Work
             </button>
             <button 
               onClick={() => handleNavigation('writing')}
-              className="block w-full text-left px-3 py-2 text-black hover:text-silver transition-colors duration-200 font-pixel text-xs"
+              className="block w-full text-left px-3 py-2 text-yellow-500 hover:text-silver transition-colors duration-200 font-pixel text-xs"
             >
               Writing
             </button>
-            <Link href="/gallery" className="block w-full text-left px-3 py-2 text-black hover:text-silver transition-colors duration-200 font-pixel text-xs">
+            <Link href="/gallery" className="block w-full text-left px-3 py-2 text-yellow-500 hover:text-silver transition-colors duration-200 font-pixel text-xs">
               Gallery
             </Link>
             <button 
               onClick={() => handleNavigation('contact')}
-              className="block w-full text-left px-3 py-2 text-black hover:text-silver transition-colors duration-200 font-pixel text-xs"
+              className="block w-full text-left px-3 py-2 text-yellow-500 hover:text-silver transition-colors duration-200 font-pixel text-xs"
             >
               Contact
             </button>

@@ -58,7 +58,7 @@ export default function Hero() {
       </div>
       
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 className="text-4xl md:text-6xl font-pixel font-bold text-white mb-6">
+        <h1 className="text-4xl md:text-6xl font-pixel font-bold text-yellow-400 mb-6">
           Sarah Bond
         </h1>
         <p className="text-xl md:text-2xl mb-8 font-light" 
