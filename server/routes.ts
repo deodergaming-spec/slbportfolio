@@ -5,6 +5,7 @@ import { insertContactSchema } from "@shared/schema";
 import { z } from "zod";
 import path from "path";
 import express from "express";
+import { sendEmail } from "./sendgrid";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Serve static images from attached_assets
