@@ -4,7 +4,12 @@ import { useState, useEffect } from "react";
 export default function Hero() {
   // Hero background images for slideshow
   const heroImages = [
-    '/seagulls-hero.jpg'
+    '/seagulls-hero.jpg',
+    '/seaguls1.jpg',
+    '/seaguls2.jpg',
+    '/seaguls3.jpg',
+    '/seaguls4.jpg',
+    '/seaguls5.jpg'
   ];
   
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
