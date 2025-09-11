@@ -23,7 +23,7 @@ export default function Hero() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      const navHeight = 64;
+      const navHeight = 48;
       const targetPosition = element.offsetTop - navHeight;
       window.scrollTo({
         top: targetPosition,
@@ -33,7 +33,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center pt-16">
+    <section id="home" className="relative min-h-screen flex items-center justify-center pt-12">
       {/* Hero background slideshow */}
       <div className="absolute inset-0 z-0">
         {heroImages.map((image, index) => (

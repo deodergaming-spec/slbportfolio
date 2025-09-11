@@ -29,7 +29,7 @@ export default function Navigation() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      const navHeight = 64;
+      const navHeight = 48;
       const targetPosition = element.offsetTop - navHeight;
       window.scrollTo({
         top: targetPosition,
@@ -42,7 +42,7 @@ export default function Navigation() {
   return (
     <nav className="bg-white shadow-lg fixed w-full top-0 z-50 border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-12">
           <div className="flex-shrink-0">
             <h1 className="text-black font-pixel text-xl font-semibold border border-gray-300 px-3 py-1 rounded">Sarah Bond</h1>
           </div>
