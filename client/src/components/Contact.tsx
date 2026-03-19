@@ -52,10 +52,11 @@ export default function Contact() {
     mutationFn: async (data: typeof formData) => {
       return await apiRequest("POST", "/api/contact", data);
     },
-    onSuccess: () => {
+    onSuccess: (response: any) => {
+      const emailStatus = response.emailSent ? "Message sent successfully! " : "Message saved, but email notification may have failed. ";
       toast({
         title: "Message Sent",
-        description: "Thank you for your message! Sarah will get back to you soon.",
+        description: `${emailStatus}Thank you for your message! Sarah will get back to you soon.`,
       });
       setFormData({
         firstName: "",

@@ -15,12 +15,41 @@ export async function registerRoutes(app: Express): Promise<Server> {
   app.post("/api/contact", async (req, res) => {
     try {
       const validatedData = insertContactSchema.parse(req.body);
+      
+      // Send email notification
+      const emailSent = await sendEmail({
+        to: "sarahlousiebond@hotmail.com",
+        from: "noreply@sarahbond.com", // This will be overridden by SendGrid verified sender
+        subject: `New Contact Form Message: ${validatedData.subject}`,
+        text: `
+Name: ${validatedData.firstName} ${validatedData.lastName}
+Email: ${validatedData.email}
+Subject: ${validatedData.subject}
+Message: ${validatedData.message}
+        `,
+        html: `
+          <h3>New Contact Form Submission</h3>
+          <p><strong>Name:</strong> ${validatedData.firstName} ${validatedData.lastName}</p>
+          <p><strong>Email:</strong> ${validatedData.email}</p>
+          <p><strong>Subject:</strong> ${validatedData.subject}</p>
+          <p><strong>Message:</strong></p>
+          <p>${validatedData.message.replace(/\n/g, '<br>')}</p>
+        `
+      });
+      
+      // Store in database regardless of email success
       const contact = await storage.createContact(validatedData);
-      res.json({ success: true, contact });
+      
+      res.json({ 
+        success: true, 
+        contact,
+        emailSent: emailSent
+      });
     } catch (error) {
       if (error instanceof z.ZodError) {
         res.status(400).json({ success: false, errors: error.errors });
       } else {
+        console.error('Contact form error:', error);
         res.status(500).json({ success: false, message: "Internal server error" });
       }
     }
