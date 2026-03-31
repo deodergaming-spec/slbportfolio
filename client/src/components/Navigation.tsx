@@ -5,6 +5,24 @@ import { Link, useLocation } from "wouter";
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [location] = useLocation();
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY && currentScrollY > 60) {
+        setIsVisible(false);
+        setIsMenuOpen(false);
+      } else {
+        setIsVisible(true);
+      }
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY]);
 
   useEffect(() => {
     // Check for hash in URL when component mounts or location changes
@@ -40,7 +58,7 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="bg-white shadow-lg fixed w-full top-0 z-50 border-b border-gray-200">
+    <nav className={`bg-white shadow-lg fixed w-full top-0 z-50 border-b border-gray-200 transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-12">
           <div className="flex-shrink-0">
