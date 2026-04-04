@@ -105,21 +105,6 @@ export default function Writing() {
             </div>
           </div>
         </div>
-        
-        {/* Writing Workspace Image */}
-        <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-          <img 
-            src="/seagulls-rehearsal.jpg" 
-            alt="Behind the scenes of Seagulls and Sad Sad Stories"
-            className="w-full h-64 md:h-80 object-cover"
-          />
-          <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
-            <div className="text-center text-white">
-              <h3 className="text-3xl font-playfair font-bold mb-4">From Script to Stage</h3>
-              <p className="text-lg max-w-2xl mx-auto px-4">Bringing written words to life through collaborative theatre</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
