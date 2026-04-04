@@ -92,6 +92,9 @@ export default function Navigation() {
               >
                 Writing
               </button>
+              <Link href="/workshops" className="text-yellow-500 hover:text-silver transition-colors duration-200 font-pixel text-xs">
+                Workshops
+              </Link>
               <Link href="/gallery" className="text-yellow-500 hover:text-silver transition-colors duration-200 font-pixel text-xs">
                 Gallery
               </Link>
@@ -144,6 +147,9 @@ export default function Navigation() {
             >
               Writing
             </button>
+            <Link href="/workshops" className="block w-full text-left px-3 py-2 text-yellow-500 hover:text-silver transition-colors duration-200 font-pixel text-xs">
+              Workshops
+            </Link>
             <Link href="/gallery" className="block w-full text-left px-3 py-2 text-yellow-500 hover:text-silver transition-colors duration-200 font-pixel text-xs">
               Gallery
             </Link>
