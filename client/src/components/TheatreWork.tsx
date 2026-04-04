@@ -8,7 +8,7 @@ export default function TheatreWork() {
       venue: "The Lit and Phil, Newcastle",
       year: "2025",
       role: "Director",
-      image: null
+      image: "/orpheus-production.jpg"
     },
     {
       title: "Seagulls and Sad Sad Stories",
