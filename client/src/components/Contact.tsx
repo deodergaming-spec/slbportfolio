@@ -272,13 +272,13 @@ export default function Contact() {
               <CardContent className="p-0">
                 <h3 className="text-2xl font-playfair font-semibold mb-6 text-[#000000]">Connect Online</h3>
                 <div className="flex space-x-4">
-                  <a href="#" className="w-12 h-12 bg-silver rounded-full flex items-center justify-center text-black hover:bg-silver/80 transition-all duration-200">
+                  <a href="https://www.linkedin.com/in/sarah-bond-76792317a/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-silver rounded-full flex items-center justify-center text-black hover:bg-silver/80 transition-all duration-200">
                     <Linkedin size={20} />
                   </a>
-                  <a href="#" className="w-12 h-12 bg-silver rounded-full flex items-center justify-center text-black hover:bg-silver/80 transition-all duration-200">
+                  <a href="https://www.instagram.com/sarahlouisebond/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-silver rounded-full flex items-center justify-center text-black hover:bg-silver/80 transition-all duration-200">
                     <Instagram size={20} />
                   </a>
-                  <a href="#" className="w-12 h-12 bg-silver rounded-full flex items-center justify-center text-black hover:bg-silver/80 transition-all duration-200">
+                  <a href="https://www.youtube.com/@slb0nd" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-silver rounded-full flex items-center justify-center text-black hover:bg-silver/80 transition-all duration-200">
                     <Youtube size={20} />
                   </a>
                 </div>
