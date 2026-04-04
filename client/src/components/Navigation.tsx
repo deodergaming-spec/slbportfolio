@@ -84,7 +84,7 @@ export default function Navigation() {
                 onClick={() => handleNavigation('theatre')}
                 className="text-yellow-500 hover:text-silver transition-colors duration-200 font-pixel text-xs"
               >
-                Theatre Work
+                Projects
               </button>
               <button 
                 onClick={() => handleNavigation('writing')}
@@ -136,7 +136,7 @@ export default function Navigation() {
               onClick={() => handleNavigation('theatre')}
               className="block w-full text-left px-3 py-2 text-yellow-500 hover:text-silver transition-colors duration-200 font-pixel text-xs"
             >
-              Theatre Work
+              Projects
             </button>
             <button 
               onClick={() => handleNavigation('writing')}

@@ -3,6 +3,14 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function TheatreWork() {
   const productions = [
     {
+      title: "Orpheus and Eurydice Project 2025",
+      description: "A free six week summer project to inspire young people to engage with the classics. The project was open to 12-18 year olds interested in performance and mythology. For six weeks, the young people learned about the myth of Orpheus and Eurydice from a classics and mythology expert, and worked to devise their own retelling of the myth for a paying audience.",
+      venue: "The Lit and Phil, Newcastle",
+      year: "2025",
+      role: "Director",
+      image: null
+    },
+    {
       title: "Seagulls and Sad Sad Stories",
       description: "Three young lads, hoping for the answers to their maths exam and which girls in their year they stand a chance with, find out more than they bargained for when they put the question of their future to a mystical fortune teller. Faced with harsh realities, cruel stereotypes, and an unnaturally persistent seagull, they must decide whether the perceptions of others will determine their entire life or whether they believe they're worth so much more.",
       venue: "Laurels, Whitley Bay",
@@ -36,7 +44,7 @@ export default function TheatreWork() {
     <section id="theatre" className="py-20 bg-light-silver">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-pixel font-bold text-black mb-4">Theatre Work</h2>
+          <h2 className="text-4xl font-pixel font-bold text-black mb-4">Projects</h2>
         </div>
         
         {/* Featured Production */}
