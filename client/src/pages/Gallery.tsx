@@ -39,7 +39,7 @@ const sections = [
   {
     id: "seagulls",
     title: "Seagulls and Sad Sad Stories",
-    subtitle: "Dress Rehearsal · December 2024",
+    subtitle: "LAURELS Theatre · December 2024",
     images: seagullsImages,
     initialCount: 24,
   },
