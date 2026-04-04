@@ -74,12 +74,11 @@ export default function Hero() {
             onClick={() => scrollToSection('theatre')}
             className="bg-silver text-black px-8 py-3 rounded-lg font-semibold hover:bg-silver/90 transition-all duration-200 transform hover:scale-105"
           >
-            View Theatre Work
+            View Projects
           </Button>
           <Button 
             onClick={() => scrollToSection('writing')}
-            variant="outline"
-            className="border-2 border-white text-white bg-transparent px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-black transition-all duration-200"
+            className="bg-silver text-black px-8 py-3 rounded-lg font-semibold hover:bg-silver/90 transition-all duration-200 transform hover:scale-105"
           >
             Explore Writing
           </Button>
