@@ -28,9 +28,12 @@ export default function Navigation() {
     // Check for hash in URL when component mounts or location changes
     const hash = window.location.hash.replace('#', '');
     if (hash && location === '/') {
+      window.scrollTo(0, 0);
       setTimeout(() => {
         scrollToSection(hash);
-      }, 100);
+      }, 500);
+    } else if (!hash && location === '/') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   }, [location]);
 
