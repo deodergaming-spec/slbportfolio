@@ -3,6 +3,12 @@ import { Link } from "wouter";
 import { ArrowLeft } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import img1 from "@assets/1_Creative_Workshops_1775309012543.png";
+import img2 from "@assets/2_About_me_1775309012543.png";
+import img3 from "@assets/3_1775309012542.png";
+import img4 from "@assets/4_1775309012542.png";
+import img5 from "@assets/5_1775309012543.png";
+import img6 from "@assets/6_1775309012543.png";
 
 export default function Workshops() {
   return (
@@ -23,60 +29,28 @@ export default function Workshops() {
       </div>
 
       {/* Workshop Content */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        
-        {/* Workshop Cover Image */}
-        <div className="mb-12 rounded-2xl overflow-hidden shadow-lg">
-          <img 
-            src="/creative-workshops-cover.png" 
-            alt="Creative Workshops 2025 Programme"
-            className="w-full h-auto"
-          />
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-6">
+        <div className="rounded-2xl overflow-hidden shadow-lg">
+          <img src={img1} alt="Creative Workshops 2026 Programme" className="w-full h-auto" />
         </div>
-        
-        {/* Workshop Packages Section */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-playfair font-bold text-black mb-8 text-center">Workshop Packages</h2>
-          
-          <div className="space-y-8">
-            <div className="rounded-xl overflow-hidden shadow-lg">
-              <img 
-                src="/workshop-packages-1.png" 
-                alt="Workshop packages - Writing, Directing, and Get into Theatre"
-                className="w-full h-auto"
-              />
-            </div>
-            
-            <div className="rounded-xl overflow-hidden shadow-lg">
-              <img 
-                src="/workshop-packages-2.png" 
-                alt="Workshop packages - Voiceover, Seagulls, and 3 Week Workshop"
-                className="w-full h-auto"
-              />
-            </div>
-          </div>
+        <div className="rounded-2xl overflow-hidden shadow-lg">
+          <img src={img2} alt="About Sarah Bond" className="w-full h-auto" />
         </div>
-        
-        {/* Bespoke Workshops Section */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-playfair font-bold text-black mb-8 text-center">Bespoke Workshops</h2>
-          
-          <div className="rounded-xl overflow-hidden shadow-lg">
-            <img 
-              src="/bespoke-workshops.png" 
-              alt="Bespoke workshops tailored to your curriculum"
-              className="w-full h-auto"
-            />
-          </div>
+        <div className="rounded-2xl overflow-hidden shadow-lg">
+          <img src={img3} alt="Workshop Packages - Writing, Directing, Get into Theatre" className="w-full h-auto" />
+        </div>
+        <div className="rounded-2xl overflow-hidden shadow-lg">
+          <img src={img4} alt="Workshop Packages - Voiceover, Seagulls, 3 Week Workshop" className="w-full h-auto" />
+        </div>
+        <div className="rounded-2xl overflow-hidden shadow-lg">
+          <img src={img5} alt="Bespoke Workshops" className="w-full h-auto" />
+        </div>
+        <div className="rounded-2xl overflow-hidden shadow-lg">
+          <img src={img6} alt="Get in Touch" className="w-full h-auto" />
         </div>
 
         {/* Contact Section */}
-        <div className="text-center">
-          <h2 className="text-3xl font-playfair font-bold text-black mb-8">Get In Touch</h2>
-          <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
-            Ready to book a workshop or have questions about our offerings? 
-            Contact Sarah to discuss your requirements and create an unforgettable creative experience.
-          </p>
+        <div className="text-center pt-6">
           <Link href="/#contact">
             <Button className="bg-black text-white hover:bg-gray-800 px-8 py-3 text-lg">
               Contact Sarah
