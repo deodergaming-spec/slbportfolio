@@ -1,3 +1,5 @@
+import debutAwardsLogo from "@assets/Debut_Awards_NETFLIX__2025_Primary_1775308558899.png";
+
 export default function About() {
   return (
     <section id="about" className="py-20 bg-white">
@@ -34,6 +36,13 @@ export default function About() {
                 src="/sarah-headshot-new.png" 
                 alt="Sarah Bond headshot"
                 className="w-full h-full object-contain"
+              />
+            </div>
+            <div className="flex justify-end mt-4">
+              <img
+                src={debutAwardsLogo}
+                alt="The Stage Debut Awards | Netflix"
+                className="w-56"
               />
             </div>
           </div>
