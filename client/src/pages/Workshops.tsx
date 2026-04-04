@@ -11,10 +11,10 @@ export default function Workshops() {
       {/* Header */}
       <div className="bg-black text-white py-8 pt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link href="/#writing">
-            <Button variant="outline" className="mb-4 text-white border-white hover:bg-white hover:text-black">
+          <Link href="/">
+            <Button className="mb-4 bg-white text-black border-white hover:bg-gray-200">
               <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Writing Portfolio
+              Back to Portfolio
             </Button>
           </Link>
           <h1 className="text-4xl font-pixel font-bold">Creative Workshops</h1>
