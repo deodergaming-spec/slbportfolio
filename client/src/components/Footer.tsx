@@ -66,16 +66,8 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="border-t border-gray-600 mt-8 pt-8 flex flex-col sm:flex-row items-center justify-between gap-2">
-          <a
-            href="https://www.lewispalmerphotography.co.uk"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-300 hover:text-silver transition-colors duration-200 text-sm"
-          >
-            lewispalmerphotography.co.uk
-          </a>
-          <p className="text-gray-300 text-sm text-center">
+        <div className="border-t border-gray-600 mt-8 pt-8 text-center">
+          <p className="text-gray-300 text-sm">
             © 2024 Sarah Bond. All rights reserved. | Website designed by William Bond. | All photography by{" "}
             <a
               href="https://www.lewispalmerphotography.co.uk"
