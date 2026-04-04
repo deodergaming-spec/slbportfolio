@@ -16,10 +16,16 @@ export async function registerRoutes(app: Express): Promise<Server> {
     try {
       const validatedData = insertContactSchema.parse(req.body);
       
+      const fromEmail = process.env.SENDGRID_FROM;
+      if (!fromEmail) {
+        console.error('SENDGRID_FROM environment variable is not set');
+      }
+
       // Send email notification
-      const emailSent = await sendEmail({
-        to: "sarahlousiebond@hotmail.com",
-        from: "noreply@sarahbond.com", // This will be overridden by SendGrid verified sender
+      const emailSent = fromEmail ? await sendEmail({
+        to: "Zentionxttv@gmail.com",
+        from: fromEmail,
+        replyTo: validatedData.email,
         subject: `New Contact Form Message: ${validatedData.subject}`,
         text: `
 Name: ${validatedData.firstName} ${validatedData.lastName}
@@ -35,7 +41,7 @@ Message: ${validatedData.message}
           <p><strong>Message:</strong></p>
           <p>${validatedData.message.replace(/\n/g, '<br>')}</p>
         `
-      });
+      }) : false;
       
       // Store in database regardless of email success
       const contact = await storage.createContact(validatedData);
