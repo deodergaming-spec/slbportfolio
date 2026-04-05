@@ -59,16 +59,6 @@ export default function Hero() {
 
       </div>
       
-      {/* Photographer credit */}
-      <a
-        href="https://www.lewispalmerphotography.co.uk"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="absolute bottom-4 left-4 z-10 text-white/70 hover:text-white text-xs transition-colors duration-200"
-        style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}
-      >
-        © lewispalmerphotography.co.uk
-      </a>
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="text-4xl md:text-6xl font-pixel font-bold text-yellow-400 mb-6">
